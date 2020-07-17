@@ -1,0 +1,88 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <link rel="stylesheet" href="converter_styles.css">
+
+    <meta charset="UTF-8">
+    <title>Data Converter</title>
+</head>
+
+
+<body>
+
+    <!-- <label class="switch">
+        <input type="checkbox">
+        <span class="slider round"></span>
+    </label> -->
+
+    <a href="data_converter_no_gui.html">CLICK HERE FOR NON-GUI VERSION</a>
+
+    <div class="container">
+
+        <div class="btnContainer">
+
+            <div class="inputContainer">
+
+                <br><br>
+                <label for="input" style="display: block" class="inputLabel">Type Here to Convert</label><br>
+                <input type="text", id="input", name="input" placeholder="Enter a number value">
+
+            </div>
+
+            <div class="convertButtons">
+
+                <button class="btn" id="byte" onclick="changeColor(this.id)">
+                    <label for="byte" id="lbl1" class="datatypeLabel"><br>Byte<br><br></label> 
+                    <label for="byte" id="lbl2"><br></label>
+                </button>
+
+                <button class="btn" id="kilobyte" onclick="changeColor(this.id)">
+                    <label for="kilobyte" id="lbl3" class="datatypeLabel"><br>Kilobyte<br><br></label> 
+                    <label for="kilobyte" id="lbl4"><br></label>
+                </button>
+
+                <button class="btn" id="megabyte" onclick="changeColor(this.id)">
+                    <label for="megabyte" id="lbl5" class="datatypeLabel"><br>Megabyte<br><br></label> 
+                    <label for="megabyte" id="lbl6"><br></label>
+                </button>
+    
+                <button class="btn" id="gigabyte" onclick="changeColor(this.id)">
+                    <label for="gigabyte" id="lbl7" class="datatypeLabel"><br>Gigabyte<br><br></label> 
+                    <label for="gigabyte" id="lbl8"><br></label>
+                </button>
+                <button class="btn" id="terrabyte" onclick="changeColor(this.id)">
+                    <label for="terrabyte" id="lbl9" class="datatypeLabel"><br>Terrabyte<br><br></label> 
+                    <label for="terrabyte" id="lbl10"><br></label>
+                </button>
+                <button class="btn" id="petabyte" onclick="changeColor(this.id)">
+                    <label for="petabyte" id="lbl11" class="datatypeLabel"><br>Petabyte<br><br></label> 
+                    <label for="petabyte" id="lbl12"><br></label>
+                </button>
+    
+                <button class="btn" id="exabyte" onclick="changeColor(this.id)">
+                    <label for="exabyte" id="lbl13" class="datatypeLabel"><br>Exabyte<br><br></label> 
+                    <label for="exabyte" id="lbl14"><br></label>
+                </button>
+                <button class="btn" id="zettabyte" onclick="changeColor(this.id)">
+                    <label for="zettabyte" id="lbl15" class="datatypeLabel"><br>Zettabyte<br><br></label> 
+                    <label for="zettabyte" id="lbl16"><br></label>
+                </button>
+                <button class="btn" id="yottabyte" onclick="changeColor(this.id)">
+                    <label for="yottabyte" id="lbl17" class="datatypeLabel"><br>Yottabyte<br><br></label> 
+                    <label for="yottabyte" id="lbl18"><br></label>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        Made by Parker Hague 7/9/20.
+    </footer>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="converter_conversions.js"></script>
+    <script src="converter.js"></script>
+</body>
+</html>

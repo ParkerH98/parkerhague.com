@@ -97,34 +97,19 @@ hr {
 	border-color: #1c8784;
 }
 
-.divider{
-    position:absolute;
-    left:65%;
-    top:10%;
-    bottom:10%;
-	border-left:1px solid #727878;
-	z-index: 999;
-}
 
-
+/* NAVBAR SECTION */
 /* shows active element for scrollspy */
-.active {
-	background-color: #66A5AD;
-	
-}
+.active {background-color: #66A5AD;}
 
 /* sets text color white */
-#naver li a {
-	color: #fff;
-}
+#naver li a {color: #fff;}
+
+/* spacing from side scroll bar & bg color */
+#naver ul{padding-right: 5px; background: #222222;}
 
 /* highlights links on hover */
-#naver li:hover,
-li:focus-within {
-
-	background: #66A5AD;
-	cursor: pointer;
-}
+#naver li:hover, li:focus-within { background: #66A5AD; cursor: pointer;}
 
 /* opens dropdown on hover */
 #naver ul li:hover>ul,
@@ -135,12 +120,7 @@ ul li ul:focus {
 	opacity: 1;
 	display: block
 }
-
-/* sets background of dropdown */
-#naver ul {
-
-	background: #222222;
-}
+/* NAVBAR SECTION */
 
 .background-white {
 	background: #FFFFFF;
@@ -193,24 +173,14 @@ ul li ul:focus {
 	color: #BCBCBC;
 }
 
+/* SKILLS SECTION */
+#skills ul > li {min-height: 30px; padding: 3px 0px;}
 
-#skills ul>li {
-	min-height: 30px;
-	padding: 3px 0px;
-}
+#skills ul > li:hover {background: #F2F2F2;}
 
-#skills ul>li:hover {
-	background: #F2F2F2;
-}
+#skills ul > li .skills-title {display: inline-block; width: 60%;}
 
-#skills ul>li .skills-title {
-	display: inline-block;
-	width: 60%;
-}
-
-#skills ul>li .skills-score {
-	float: right;
-}
+#skills ul > li .skills-score {float: right;}
 
 #skills ul>li .skills-score .glyphicon {
 	color: #DFE0E0;
@@ -222,93 +192,29 @@ ul li ul:focus {
 	transition: all 0.3s;
 }
 
-#skills ul>li .skills-score .glyphicon.filled {
-	color: #66A5AD;
-}
+#skills ul>li .skills-score .glyphicon.filled {color: #66A5AD;}
 
-#skills ul>li:hover .skills-score .glyphicon {
-	margin-left: 2px;
-}
+#skills ul>li:hover .skills-score .glyphicon {margin-left: 2px;}
+/* SKILLS SECTION */
 
+/* RELEVANT COURSEOWRK SECTION */
 #relcw ul>li {
 	min-height: 30px;
 	padding: 3px 0px;
 }
 
 #relcw ul>li:hover {
-	background: #F2F2F2;
+	background:#F2F2F2;
 }
 
-#relcw ul>li .relcw-title {
-	display: inline-block;
-	width: 60%;
-}
-
-#relcw ul>li .relcw-score {
-	float: right;
-}
-
-#relcw ul>li .relcw-score .glyphicon {
-	color: #DFE0E0;
-
-	font-size: 14px;
-	-webkit-transition: all 0.3s;
-	-moz-transition: all 0.3s;
-	-o-transition: all 0.3s;
-	transition: all 0.3s;
-}
-
-#relcw ul>li .relcw-score .glyphicon.filled {
-	color: #66A5AD;
-}
-
-#relcw ul>li:hover .relcw-score .glyphicon {
-	margin-left: 2px;
-}
-
-.relcw-score {
-	font-size: 20px;
-}
+#relcw ul li{display:block;  padding: 30px;}
 
 
+.courseName{ float: left; white-space: nowrap;}
+.grade {float: right; font-size: 20px; font-weight: bold; color: #66A5AD; float: right; }
+/* RELEVANT COURSEOWRK SECTION */
 
 
-#interests .left {
-	float: left;
-}
-
-#interests .right {
-	float: right;
-}
-
-#interests img {
-	width: 80%;
-	height: auto;
-}
-
-#interests .right img {
-	float: right;
-}
-
-#interests .interest-content {
-	padding: 40px 0px;
-}
-
-#interests .row:hover .left img {
-	-webkit-transform: rotate(-12deg);
-	-moz-transform: rotate(-12deg);
-	-ms-transform: rotate(-12deg);
-	-o-transform: rotate(-12deg);
-}
-
-#interests .row:hover .right img {
-	-webkit-transform: rotate(12deg);
-	-moz-transform: rotate(12deg);
-	-ms-transform: rotate(12deg);
-	-o-transform: rotate(12deg);
-}
-
-/* #projects .row { margin: 0px; } // bootstrap 3.1- hack */
 #projects .row>div {
 	margin-bottom: 30px;
 }
@@ -413,17 +319,13 @@ ul li ul:focus {
 
 
 
-	.navbar {
-		left: 0px;
-		width: 100%;
-	}
 
 	.navbar .nav>li {
-		height: 60px;
+		height: 40px;
 	}
 
 	.navbar .nav>li a {
-		height: 60px;
+		height: 40px;
 		text-align: center;
 		padding-top: 20px;
 		font-weight: 600;
@@ -434,9 +336,6 @@ ul li ul:focus {
 		top: 0px;
 	}
 
-	.navbar {
-		top: 0px;
-	}
 
 	.container {
 		padding: 60px 20px;

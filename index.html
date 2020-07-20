@@ -59,10 +59,10 @@
 </head>
 
 
-<body data-spy="scroll" data-target="#naver" data-offset="20">
+<body data-spy="scroll" data-target="#naver" data-offset="000">
 
 
-	<nav class="navbar navbar-inverse navbar-fixed-top sticky-top" id="naver">
+	<nav id="naver" class="navbar navbar-inverse navbar-fixed-top">
 
 		<div class="container-fluid">
 
@@ -81,20 +81,20 @@
 
 				<ul class="nav navbar-nav navbar-right">
 
-					<li class="nav-item"><a href="#aboutMe" class="navbar-link">About Me</a></li>
-					<li class="nav-item"><a href="#experiences" class="nav-link">Experience</a></li>
-					<li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
-					<li class= "nav-item dropdown">
+					<li><a class="nav-link" href="#aboutMe">About Me</a></li>
+					<li><a class="nav-link" href="#experiences">Experience</a></li>
+					<li><a class="nav-link" href="#skills">Skills</a></li>
+					<li>
 
-						<a class="dropdown-toggle" data-toggle="dropdown" href="#projects">Projects
+						<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#projects">Projects
 							<span class="caret"></span></a>
 						<ul class="dropdown-menu">
-							<li class="dropdpwn-item"><a href="http://www.parkerhague.com:8080/data_converter.html" class="navbar-link">Data Converter</a></li>
-							<li class="dropdpwn-item"><a href="#">High Low IOS App</a></li>
-							<li class="dropdpwn-item"><a href="https://github.com/ParkerH98">GitHub</a></li>
+							<li><a class="nav-link" href="http://www.parkerhague.com:8080/data_converter.html">Data Converter</a></li>
+							<li><a class="nav-link" href="#">High Low IOS App</a></li>
+							<li><a class="nav-link" href="https://github.com/ParkerH98">GitHub</a></li>
 						</ul>
 					</li>
-					<li><a href="#contact">Contact</a></li>
+					<li><a class="nav-link" href="#contact">Contact</a></li>
 				</ul>
 			</div>
 		</div>
@@ -222,47 +222,65 @@
 
 		<h3>Relevant Coursework</h3>
 
-		<div class="experience row">
+		<div class="experiences">
 
 			<div class="experience row">
 
-				<div class="col-md-6">
+				<div class="col-md-3">
 
-					<div class="col-md-6">
-						<h4>Course:</h4>
-						<ul class="no-bullets">
-							<li style="margin: 10px;">Data Structures and Algorithm Analysis</li>
-							<li style="margin: 10px;">Database Systems, Design, and Administration</li>
-						</ul>
-					</div>
+					<ul class="no-bullets">
+						<li>blah</li>
+						<li>blah</li>
+						<li>blah</li>
 
-					<div class="col-md-6">
-						<h4>Grade Received:</h4>
-						<ul class="no-bullets">
-							<li style="margin: 10px;">A</li>
-							<li style="margin: 10px;">A</li>
-						</ul>
-					</div>
-				</div>
+					</ul>
 
-				<div class="col-md-6">
-
-					<div class="col-md-6">
-						<h4>_________________</h4>
-						<ul class="no-bullets">
-							<li style="margin: 10px;">Computer Systems</li>
-							<li style="margin: 10px;">Data Communications and Networking</li>
-						</ul>
-					</div>
-					<div class="col-md-6">
-						<h4>_________________</h4>
-						<ul class="no-bullets">
-							<li style="margin: 10px;">A</li>
-							<li style="margin: 10px;">A</li>
-						</ul>
-					</div>
+					<div class="divider"></div>
 
 				</div>
+
+		
+
+				<div class="col-md-3">
+
+					<ul class="no-bullets">
+						<li>A</li>
+						<li>A</li>
+						<li>A</li>
+
+					</ul>
+
+
+				</div>
+
+				<div class="col-md-3">
+
+					<ul class="no-bullets">
+						<li>blah</li>
+						<li>blah</li>
+						<li>blah</li>
+
+					</ul>
+					
+					<div class="divider"></div>
+
+				</div>
+
+		
+
+				<div class="col-md-3">
+
+					<ul class="no-bullets">
+						<li>A</li>
+						<li>A</li>
+						<li>A</li>
+
+					</ul>
+
+
+				</div>
+
+			
 			</div>
 		</div>
 
@@ -475,7 +493,7 @@
 								<span class="glyphicon glyphicon-star filled"></span>
 
 
-								<span class="glyphicon glyphicon-star"></span>
+								<span class="glyphicon glyphicon-star filled"></span>
 
 
 								<span class="glyphicon glyphicon-star"></span>
@@ -919,7 +937,9 @@
 		integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
 	</script>
 
-	<script src="index.js"></script>
+
+
+	<script>$('body').scrollspy({ target: '#naver' })</script>
 
 	<!-- Google Analytics -->
 	<script type="text/javascript">

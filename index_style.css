@@ -364,6 +364,7 @@ ul li ul:focus {
 
 	.hidden-phone {
 		display: none;
+		visibility: hidden;
 	}
 
 	#aboutMe .row * {
@@ -390,12 +391,13 @@ ul li ul:focus {
 	}
 }
 
-@media (max-device-width: 480px){
+@media (max-width: 480px){
 
 
 
 	.mobile{
 		display: none;
+		visibility: hidden;
 	}
 
 }

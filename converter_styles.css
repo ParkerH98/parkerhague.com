@@ -1,68 +1,52 @@
 html {
-    font-size: 62.5%;
-    box-sizing: border-box;
+  font-size: 62.5%;
+  box-sizing: border-box;
 }
-  
-*, *::before, *::after {
-    margin: 0;
-    padding: 0;
-    box-sizing: inherit;
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
 }
-  
-.container {
-    text-align: center;
-}
-  
-.btnContainer {
-    display: inline-block;
-}
-  
-input {
-    height: 40px;
-    border-radius: 5px;
-    font-size: 25px;
-}
-  
+
+.container {text-align: center;}
+
+.btnContainer {display: inline-block;}
+
+input {height: 40px; border-radius: 5px; font-size: 25px;}
+
 .convertButtons {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 15px;
-    padding-top: 50px;
-    padding-left: 100px;
-    padding-right: 100px;
-    padding-bottom: 100px;
-    vertical-align: top;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 15px;
+  padding-top: 50px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 100px;
+  vertical-align: top;
 }
-  
+
 .btn {
-    height: 145px;
-    width: 145px;
-    border-radius: 20px;
-    font-size: 19px;
-    font-family:'Courier New', Courier, monospace;
-    text-align: center;
-    background-color: #ff7979;
+  height: 145px;
+  width: 145px;
+  border-radius: 20px;
+  font-size: 19px;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+  background-color: #ff7979;
 }
 
-body {
-    background-color: #95a5a6;
-}
-  
-button:hover {
-    background-color: #f9ca24;
-}
+body {background-color: #95a5a6;}
 
-button:visited {
-    background-color: #f9ca24;
-}
+button:hover {background-color: #f9ca24;}
 
-.clicked {
-    background-color: #f9ca24;
-}
+button:visited {background-color: #f9ca24;}
 
-label {
-    overflow-wrap: break-word;
-}
+.clicked {background-color: #f9ca24;}
+
+label {overflow-wrap: break-word;}
 
 a {font-size: 20px; font-family: 'Courier New', Courier, monospace;}
 
@@ -70,52 +54,43 @@ a {font-size: 20px; font-family: 'Courier New', Courier, monospace;}
 
 .datatypeLabel {font-weight: bold; font-size: 18px;}
 
+@media (max-device-width: 480px) {
 
-  
-  
+  .container {
 
-  @media (max-device-width: 480px){
-
-    .container {
-    
-      min-width: 60%;
-      max-width: 80%;
-      max-height: fit-content;
-      max-width: fit-content;
-    }
-
-    .btnContainer {
-
-      min-width: 280px;
-      max-width: 480;
-      max-height: fit-content;
-    }
-
-    .btn {
-      height: 90px;
-      width: 90px;
-      border-radius: 20px;
-      font-size: 10px;
-      font-family:'Courier New', Courier, monospace;
-      text-align: center;
-      background-color: #ff7979;
+    min-width: 60%;
+    max-width: 80%;
+    max-height: fit-content;
+    max-width: fit-content;
   }
 
-  .datatypeLabel {font-weight: bold; font-size: 14px;}
+  .btnContainer {
 
-  html, body {margin: 0; height: 100%; overflow: hidden}
-
+    min-width: 280px;
+    max-width: 480;
+    max-height: fit-content;
   }
 
-
-
-  @media (max-device-width: 500px){
-
-
-
-
-    .btnContainer {
-      max-width: 400px;
-    }
-
+  .btn {
+    height: 90px;
+    width: 90px;
+    border-radius: 20px;
+    font-size: 10px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    background-color: #ff7979;
   }
+
+  .datatypeLabel {
+    font-weight: bold;
+    font-size: 14px;
+  }
+
+  html,
+  body {
+    margin: 0;
+    height: 100%;
+    overflow: hidden
+  }
+
+}

@@ -77,46 +77,6 @@
 
 <body data-spy="scroll" data-target="#naver" data-offset="100">
 
-
-	<nav id="naver" class="navbar navbar-inverse navbar-fixed-top">
-
-		<div class="container-fluid">
-
-			<div class="navbar-header">
-
-				<a class="navbar-brand" href="#aboutMe">Parker Hague's Website</a>
-				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
-					<span class="sr-only">Toggle navigation</span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-					<span class="icon-bar"></span>
-				</button>
-			</div>
-
-			<div class="collapse navbar-collapse navbar-ex1-collapse">
-
-				<ul class="nav navbar-nav navbar-right">
-
-					<li><a class="nav-link" href="#aboutMe">About Me</a></li>
-					<li><a class="nav-link" href="#experiences">Experience</a></li>
-					<li><a class="nav-link" href="#skills">Skills</a></li>
-					<li>
-
-						<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#projects">Projects
-							<span class="caret"></span></a>
-						<ul class="dropdown-menu">
-							<li><a class="nav-link" href="http://www.parkerhague.com:8080/data_converter.html">Data
-									Converter</a></li>
-							<li><a class="nav-link" href="#">High Low IOS App</a></li>
-							<li><a class="nav-link" href="https://github.com/ParkerH98">GitHub</a></li>
-						</ul>
-					</li>
-					<li><a class="nav-link" href="#contact">Contact</a></li>
-				</ul>
-			</div>
-		</div>
-	</nav>
-
 	<div class="background-white">
 		<div id="aboutMe" class="container">
 			<h2>About Me</h2>
@@ -165,6 +125,50 @@
 				</div>
 			</div>
 		</div>
+	</div>
+
+	<div class="nav-wrapper" style="height:50px;">
+
+		<nav id="naver" class="navbar navbar-inverse sticky-top">
+
+			<div class="container-fluid">
+	
+				<div class="navbar-header">
+	
+					<a class="navbar-brand" href="#aboutMe">Parker Hague's Website</a>
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
+						<span class="sr-only">Toggle navigation</span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+	
+				<div class="collapse navbar-collapse navbar-ex1-collapse">
+	
+					<ul class="nav navbar-nav navbar-right">
+	
+						<li><a class="nav-link" href="#aboutMe">About Me</a></li>
+						<li><a class="nav-link" href="#experiences">Experience</a></li>
+						<li><a class="nav-link" href="#skills">Skills</a></li>
+						<li>
+	
+							<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#projects">Projects
+								<span class="caret"></span></a>
+							<ul class="dropdown-menu">
+								<li><a class="nav-link" href="http://www.parkerhague.com:8080/data_converter.html">Data
+										Converter</a></li>
+								<li><a class="nav-link" href="#">High Low IOS App</a></li>
+								<li><a class="nav-link" href="https://github.com/ParkerH98">GitHub</a></li>
+							</ul>
+						</li>
+						<li><a class="nav-link" href="#contact">Contact</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+	
 	</div>
 
 	<div id="experiences" class="container">
@@ -330,7 +334,7 @@
 					<p>
 						<strong>Assistant Sales Manager</strong>
 
-						<span class="hidden-phone">
+						<span class="hidden-phone mobile">
 							<ul>
 								<li>Facilitated many managerial responsibilities such as opening and closing the store,
 									managing the daily financial paperwork, and maintaining the store’s inventory</li>
@@ -977,6 +981,8 @@
 			</div>
 		</div>
 	</div>/.modal -->
+
+	<script src="index_sticky_navbar.js"></script>
 
 	<!-- Bootstrap core JavaScript -->
 	<!-- JS, Popper.js, and jQuery -->

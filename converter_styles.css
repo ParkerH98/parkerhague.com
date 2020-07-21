@@ -143,3 +143,16 @@ a {
   .slider.round:before {
     border-radius: 50%;
   }
+
+
+
+  @media (max-device-width: 500px){
+
+
+
+
+    .btnContainer {
+      max-width: 400px;
+    }
+
+  }

@@ -115,6 +115,8 @@ hr {
 #naver li:hover, li:focus-within { background: #66A5AD; cursor: pointer;}
 #naver ul > li > ul :hover  {background-color: #66A5AD; cursor: pointer;}
 
+.navbar-header .navbar-brand{color: #fff;}
+
 /* opens dropdown on hover */
 #naver ul li:hover>ul,
 ul li:focus-within>ul,

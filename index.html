@@ -153,7 +153,7 @@
 						<li><a class="nav-link" href="#skills">Skills</a></li>
 						<li>
 	
-							<a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#projects">Projects
+							<a class="nav-link dropdown-toggle" data-toggle="dropdown" onchange="projectFunction()" href="#projects">Projects
 								<span class="caret"></span></a>
 							<ul class="dropdown-menu">
 								<li><a class="nav-link" href="http://www.parkerhague.com:8080/data_converter.html">Data
@@ -164,7 +164,7 @@
 						</li>
 						<li><a class="nav-link" href="#contact">Contact</a></li>
 					</ul>
-				</div>
+				</div>  
 			</div>
 		</nav>
 
@@ -984,6 +984,15 @@
 	</div>/.modal -->
 
 	<script src="index_sticky_navbar.js"></script>
+	<script>
+		function projectFunction() {
+
+			window.location.replace('projects');
+			window.location.href = 'projects';
+			
+			
+		}
+	</script>
 
 	<!-- Bootstrap core JavaScript -->
 	<!-- JS, Popper.js, and jQuery -->

@@ -113,6 +113,7 @@ hr {
 
 /* highlights links on hover */
 #naver li:hover, li:focus-within { background: #66A5AD; cursor: pointer;}
+#naver ul > li > ul :hover  {background-color: #66A5AD; cursor: pointer;}
 
 /* opens dropdown on hover */
 #naver ul li:hover>ul,

@@ -215,6 +215,12 @@ ul li ul:focus {
     transform: scale(1.3);
 }
 
+#relcw h4 {
+	padding-top: 40px;
+	padding-bottom: 0px;
+	margin-bottom: 0px;
+}
+
 #relcw ul li{display:block;  padding: 25px;}
 
 .courseName{ float: left; white-space: nowrap;}
@@ -382,6 +388,8 @@ ul li ul:focus {
 	} */
 
 	/* .mobile-block{height: 150px;} */
+
+	.hidden-phone{display: none; visibility: hidden;}
 
 
 	.mobile{

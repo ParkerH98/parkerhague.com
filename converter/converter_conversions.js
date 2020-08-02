@@ -10,12 +10,74 @@ var exabyte;
 var zettabyte;
 var yottabyte;
 
-var sizes = [bit, nibble, byte, kilobyte, megabyte, gigabyte, terrabyte, petabyte, exabyte, zettabyte, yottabyte];
-var results = new Array(11);
+
+// beginning of bit conversion functions
+///////////////////////////////////////////
+///////////////////////////////////////////
+
+function bitToByte (x){
+  var conversion = x / 8;
+  return conversion;
+}
+
+function bitToKilobyte (x){
+
+    var conversion = (x / 8) / Math.pow(2, 10);
+    
+    return conversion;
+}
+
+function bitToMegabyte (x){
+
+    var conversion = (x / 8) / Math.pow(2, 20);
+    return conversion;
+}
+
+function bitToGigabyte (x){
+
+    var conversion = x / 8 / Math.pow(2, 30);
+    return conversion;
+}
+
+function bitToTerrabyte (x){
+
+    var conversion = x / 8 / Math.pow(2, 40);
+    return conversion;
+}
+
+function bitToPetabyte (x){
+
+    var conversion = x / 8 / Math.pow(2, 50);
+    return conversion;
+}
+
+function bitToExabyte (x){
+
+    var conversion = x / 8 / Math.pow(2, 60);
+    return conversion;
+}
+
+function bitToZettabyte (x){
+
+    var conversion = x / 8 / Math.pow(2, 70);
+    return conversion;
+}
+
+function bitToYottabyte (x){
+
+    var conversion = x / 8 / Math.pow(2, 80);
+    return conversion;
+}
+
 
 // beginning of byte conversion functions
 ///////////////////////////////////////////
 ///////////////////////////////////////////
+
+function byteToBit(x) {
+  var conversion = x * 8;
+  return conversion;
+}
 
 function byteToKilobyte (x){
 
@@ -69,6 +131,11 @@ function byteToYottabyte (x){
 ///////////////////////////////////////////
 ///////////////////////////////////////////
 
+function kilobyteToBit(x) {
+  var conversion = x * Math.pow(2, 10) * 8;
+  return conversion;
+}
+
 function kilobyteTobyte (x){
 
     var conversion = x * Math.pow(2, 10);
@@ -120,6 +187,11 @@ function kilobyteToYottabyte (x){
 // beginning of megabyte conversion functions
 ///////////////////////////////////////////
 ///////////////////////////////////////////
+
+function megabyteToBit(x) {
+  var conversion = x * Math.pow(2, 20) * 8;
+  return conversion;
+}
 
 function megabyteToByte (x){
 
@@ -173,6 +245,11 @@ function megabyteToYottabyte (x){
 ///////////////////////////////////////////
 ///////////////////////////////////////////
 
+function gigabyteToBit(x) {
+  var conversion = x * Math.pow(2, 30) * 8;
+  return conversion;
+}
+
 function gigabyteToByte (x){
 
     var conversion = x * Math.pow(2, 30);
@@ -224,6 +301,11 @@ function gigabyteToYottabyte (x){
 // beginning of terrabyte conversion functions
 ///////////////////////////////////////////
 ///////////////////////////////////////////
+
+function terrabyteToBit(x) {
+  var conversion = x * Math.pow(2, 40) * 8;
+  return conversion;
+}
 
 function terrabyteToByte (x){
 
@@ -277,6 +359,11 @@ function terrabyteToYottabyte (x){
 ///////////////////////////////////////////
 ///////////////////////////////////////////
 
+function petabyteToBit(x) {
+  var conversion = x * Math.pow(2, 50) * 8;
+  return conversion;
+}
+
 function petabyteToByte (x){
 
     var conversion = x * Math.pow(2, 50);
@@ -328,6 +415,11 @@ function petabyteToYottabyte (x){
 // beginning of exabyte conversion functions
 ///////////////////////////////////////////
 ///////////////////////////////////////////
+
+function exabyteToBit(x) {
+  var conversion = x * Math.pow(2, 60) * 8;
+  return conversion;
+}
 
 function exabyteToByte (x){
 
@@ -381,6 +473,11 @@ function exabyteToYottabyte (x){
 ///////////////////////////////////////////
 ///////////////////////////////////////////
 
+function zettabyteToBit(x) {
+  var conversion = x * Math.pow(2, 70) * 8;
+  return conversion;
+}
+
 function zettabyteToByte (x){
 
     var conversion = x * Math.pow(2, 70);
@@ -433,6 +530,11 @@ function zettabyteToYottabyte (x){
 ///////////////////////////////////////////
 ///////////////////////////////////////////
 
+function yottabyteToBit(x) {
+  var conversion = x * Math.pow(2, 80) * 8;
+  return conversion;
+}
+
 function yottabyteToByte (x){
 
     var conversion = x * Math.pow(2, 80);
@@ -481,9 +583,33 @@ function yottabyteToZettabyte (x){
     return conversion;
 }
 
-function convertByte (x){
+function convertBit(x) {
 
+    var bcon = bitToByte(x);
+    var kcon = bitToKilobyte(x);
+    var mcon = bitToMegabyte(x);
+    var gcon = bitToGigabyte(x);
+    var tcon = bitToTerrabyte(x);
+    var pcon = bitToPetabyte(x);
+    var econ = bitToExabyte(x);
+    var zcon = bitToZettabyte(x);
+    var ycon = bitToYottabyte(x);
 
+    document.getElementById("conversion-bit").innerHTML = document.getElementById("input").value;
+    document.getElementById("conversion-byte").innerHTML = bcon;
+    document.getElementById("conversion-kilobyte").innerHTML = kcon;
+    document.getElementById("conversion-megabyte").innerHTML = mcon;
+    document.getElementById("conversion-gigabyte").innerHTML = gcon;
+    document.getElementById("conversion-terrabyte").innerHTML = tcon;
+    document.getElementById("conversion-petabyte").innerHTML = pcon;
+    document.getElementById("conversion-exabyte").innerHTML = econ;
+    document.getElementById("conversion-zettabyte").innerHTML = zcon;
+    document.getElementById("conversion-yottabyte").innerHTML = ycon;
+}
+
+function convertByte(x) {
+
+    var bicon = byteToBit(x);
     var kcon = byteToKilobyte(x);
     var mcon = byteToMegabyte(x);
     var gcon = byteToGigabyte(x);
@@ -495,19 +621,21 @@ function convertByte (x){
 
 
 
-    document.getElementById("lbl2").innerHTML = document.getElementById("input").value
-    document.getElementById("lbl4").innerHTML = kcon
-    document.getElementById("lbl6").innerHTML = mcon 
-    document.getElementById("lbl8").innerHTML = gcon
-    document.getElementById("lbl10").innerHTML = tcon
-    document.getElementById("lbl12").innerHTML = pcon
-    document.getElementById("lbl14").innerHTML = econ
-    document.getElementById("lbl16").innerHTML = zcon   
-    document.getElementById("lbl18").innerHTML = ycon
+    document.getElementById("conversion-bit").innerHTML = bicon;
+    document.getElementById("conversion-byte").innerHTML = document.getElementById("input").value
+    document.getElementById("conversion-kilobyte").innerHTML = kcon
+    document.getElementById("conversion-megabyte").innerHTML = mcon 
+    document.getElementById("conversion-gigabyte").innerHTML = gcon
+    document.getElementById("conversion-terrabyte").innerHTML = tcon
+    document.getElementById("conversion-petabyte").innerHTML = pcon
+    document.getElementById("conversion-exabyte").innerHTML = econ
+    document.getElementById("conversion-zettabyte").innerHTML = zcon   
+    document.getElementById("conversion-yottabyte").innerHTML = ycon
 }
 
 function convertKilobyte (x){
 
+    var bicon = kilobyteToBit(x);
     var bcon = kilobyteTobyte(x);
     var mcon = kilobyteToMegabyte(x);
     var gcon = kilobyteToGigabyte(x);
@@ -517,19 +645,21 @@ function convertKilobyte (x){
     var zcon = kilobyteToZettabyte(x);
     var ycon = kilobyteToYottabyte(x);
 
-    document.getElementById("lbl2").innerHTML = bcon
-    document.getElementById("lbl4").innerHTML = document.getElementById("input").value
-    document.getElementById("lbl6").innerHTML = mcon 
-    document.getElementById("lbl8").innerHTML = gcon
-    document.getElementById("lbl10").innerHTML = tcon
-    document.getElementById("lbl12").innerHTML = pcon
-    document.getElementById("lbl14").innerHTML = econ
-    document.getElementById("lbl16").innerHTML = zcon   
-    document.getElementById("lbl18").innerHTML = ycon
+    document.getElementById("conversion-bit").innerHTML = bicon;
+    document.getElementById("conversion-byte").innerHTML = bcon
+    document.getElementById("conversion-kilobyte").innerHTML = document.getElementById("input").value
+    document.getElementById("conversion-megabyte").innerHTML = mcon 
+    document.getElementById("conversion-gigabyte").innerHTML = gcon
+    document.getElementById("conversion-terrabyte").innerHTML = tcon
+    document.getElementById("conversion-petabyte").innerHTML = pcon
+    document.getElementById("conversion-exabyte").innerHTML = econ
+    document.getElementById("conversion-zettabyte").innerHTML = zcon   
+    document.getElementById("conversion-yottabyte").innerHTML = ycon
 }
 
 function convertMegabyte (x){
 
+    var bicon = megabyteToBit(x);
     var bcon = megabyteToByte(x);
     var kcon = megabyteToKilobyte(x);
     var gcon = megabyteToGigabyte(x);
@@ -539,19 +669,21 @@ function convertMegabyte (x){
     var zcon = megabyteToZettabyte(x);
     var ycon = megabyteToYottabyte(x);
 
-    document.getElementById("lbl2").innerHTML = bcon
-    document.getElementById("lbl4").innerHTML = kcon
-    document.getElementById("lbl6").innerHTML = document.getElementById("input").value
-    document.getElementById("lbl8").innerHTML = gcon
-    document.getElementById("lbl10").innerHTML = tcon
-    document.getElementById("lbl12").innerHTML = pcon
-    document.getElementById("lbl14").innerHTML = econ
-    document.getElementById("lbl16").innerHTML = zcon   
-    document.getElementById("lbl18").innerHTML = ycon
+    document.getElementById("conversion-bit").innerHTML = bicon;
+    document.getElementById("conversion-byte").innerHTML = bcon
+    document.getElementById("conversion-kilobyte").innerHTML = kcon
+    document.getElementById("conversion-megabyte").innerHTML = document.getElementById("input").value
+    document.getElementById("conversion-gigabyte").innerHTML = gcon
+    document.getElementById("conversion-terrabyte").innerHTML = tcon
+    document.getElementById("conversion-petabyte").innerHTML = pcon
+    document.getElementById("conversion-exabyte").innerHTML = econ
+    document.getElementById("conversion-zettabyte").innerHTML = zcon   
+    document.getElementById("conversion-yottabyte").innerHTML = ycon
 }
 
 function convertGigabyte (x){
 
+    var bicon = gigabyteToBit(x);
     var bcon = gigabyteToByte(x);
     var kcon = gigabyteToKilobyte(x);
     var mcon = gigabyteToMegabyte(x);
@@ -561,19 +693,21 @@ function convertGigabyte (x){
     var zcon = gigabyteToZettabyte(x);
     var ycon = gigabyteToYottabyte(x);
 
-    document.getElementById("lbl2").innerHTML = bcon
-    document.getElementById("lbl4").innerHTML = kcon
-    document.getElementById("lbl6").innerHTML = mcon 
-    document.getElementById("lbl8").innerHTML = document.getElementById("input").value
-    document.getElementById("lbl10").innerHTML = tcon
-    document.getElementById("lbl12").innerHTML = pcon
-    document.getElementById("lbl14").innerHTML = econ
-    document.getElementById("lbl16").innerHTML = zcon   
-    document.getElementById("lbl18").innerHTML = ycon
+    document.getElementById("conversion-bit").innerHTML = bicon;
+    document.getElementById("conversion-byte").innerHTML = bcon
+    document.getElementById("conversion-kilobyte").innerHTML = kcon
+    document.getElementById("conversion-megabyte").innerHTML = mcon 
+    document.getElementById("conversion-gigabyte").innerHTML = document.getElementById("input").value
+    document.getElementById("conversion-terrabyte").innerHTML = tcon
+    document.getElementById("conversion-petabyte").innerHTML = pcon
+    document.getElementById("conversion-exabyte").innerHTML = econ
+    document.getElementById("conversion-zettabyte").innerHTML = zcon   
+    document.getElementById("conversion-yottabyte").innerHTML = ycon
 }
 
 function convertTerrabyte (x){
 
+    var bicon = terrabyteToBit(x);
     var bcon = terrabyteToByte(x);
     var kcon = terrabyteToKilobyte(x);
     var mcon = terrabyteToMegabyte(x);
@@ -583,19 +717,21 @@ function convertTerrabyte (x){
     var zcon = terrabyteToZettabyte(x);
     var ycon = terrabyteToYottabyte(x);
 
-    document.getElementById("lbl2").innerHTML = bcon
-    document.getElementById("lbl4").innerHTML = kcon
-    document.getElementById("lbl6").innerHTML = mcon 
-    document.getElementById("lbl8").innerHTML = gcon
-    document.getElementById("lbl10").innerHTML = document.getElementById("input").value
-    document.getElementById("lbl12").innerHTML = pcon
-    document.getElementById("lbl14").innerHTML = econ
-    document.getElementById("lbl16").innerHTML = zcon   
-    document.getElementById("lbl18").innerHTML = ycon
+    document.getElementById("conversion-bit").innerHTML = bicon;
+    document.getElementById("conversion-byte").innerHTML = bcon
+    document.getElementById("conversion-kilobyte").innerHTML = kcon
+    document.getElementById("conversion-megabyte").innerHTML = mcon 
+    document.getElementById("conversion-gigabyte").innerHTML = gcon
+    document.getElementById("conversion-terrabyte").innerHTML = document.getElementById("input").value
+    document.getElementById("conversion-petabyte").innerHTML = pcon
+    document.getElementById("conversion-exabyte").innerHTML = econ
+    document.getElementById("conversion-zettabyte").innerHTML = zcon   
+    document.getElementById("conversion-yottabyte").innerHTML = ycon
 }
 
 function convertPetabyte (x){
 
+    var bicon = petabyteToBit(x);
     var bcon = petabyteToByte(x);
     var kcon = petabyteToKilobyte(x);
     var mcon = petabyteToMegabyte(x);
@@ -605,19 +741,21 @@ function convertPetabyte (x){
     var zcon = petabyteToZettabyte(x);
     var ycon = petabyteToYottabyte(x);
 
-    document.getElementById("lbl2").innerHTML = bcon
-    document.getElementById("lbl4").innerHTML = kcon
-    document.getElementById("lbl6").innerHTML = mcon 
-    document.getElementById("lbl8").innerHTML = gcon
-    document.getElementById("lbl10").innerHTML = tcon
-    document.getElementById("lbl12").innerHTML = document.getElementById("input").value
-    document.getElementById("lbl14").innerHTML = econ
-    document.getElementById("lbl16").innerHTML = zcon   
-    document.getElementById("lbl18").innerHTML = ycon
+    document.getElementById("conversion-bit").innerHTML = bicon;
+    document.getElementById("conversion-byte").innerHTML = bcon
+    document.getElementById("conversion-kilobyte").innerHTML = kcon
+    document.getElementById("conversion-megabyte").innerHTML = mcon 
+    document.getElementById("conversion-gigabyte").innerHTML = gcon
+    document.getElementById("conversion-terrabyte").innerHTML = tcon
+    document.getElementById("conversion-petabyte").innerHTML = document.getElementById("input").value
+    document.getElementById("conversion-exabyte").innerHTML = econ
+    document.getElementById("conversion-zettabyte").innerHTML = zcon   
+    document.getElementById("conversion-yottabyte").innerHTML = ycon
 }
 
 function convertExabyte (x){
 
+    var bicon = exabyteToBit(x);
     var bcon = exabyteToByte(x);
     var kcon = exabyteToKilobyte(x);
     var mcon = exabyteToMegabyte(x);
@@ -627,19 +765,21 @@ function convertExabyte (x){
     var zcon = exabyteToZettabyte(x);
     var ycon = exabyteToYottabyte(x);
 
-    document.getElementById("lbl2").innerHTML = bcon
-    document.getElementById("lbl4").innerHTML = kcon
-    document.getElementById("lbl6").innerHTML = mcon 
-    document.getElementById("lbl8").innerHTML = gcon
-    document.getElementById("lbl10").innerHTML = tcon
-    document.getElementById("lbl12").innerHTML = pcon
-    document.getElementById("lbl14").innerHTML = document.getElementById("input").value
-    document.getElementById("lbl16").innerHTML = zcon   
-    document.getElementById("lbl18").innerHTML = ycon
+    document.getElementById("conversion-bit").innerHTML = bicon;
+    document.getElementById("conversion-byte").innerHTML = bcon
+    document.getElementById("conversion-kilobyte").innerHTML = kcon
+    document.getElementById("conversion-megabyte").innerHTML = mcon 
+    document.getElementById("conversion-gigabyte").innerHTML = gcon
+    document.getElementById("conversion-terrabyte").innerHTML = tcon
+    document.getElementById("conversion-petabyte").innerHTML = pcon
+    document.getElementById("conversion-exabyte").innerHTML = document.getElementById("input").value
+    document.getElementById("conversion-zettabyte").innerHTML = zcon   
+    document.getElementById("conversion-yottabyte").innerHTML = ycon
 }
 
 function convertZettabyte (x){
 
+    var bicon = zettabyteToBit(x);
     var bcon = zettabyteToByte(x);
     var kcon = zettabyteToKilobyte(x);
     var mcon = zettabyteToMegabyte(x);
@@ -649,19 +789,21 @@ function convertZettabyte (x){
     var econ = zettabyteToExabyte(x);
     var ycon = zettabyteToYottabyte(x);
 
-    document.getElementById("lbl2").innerHTML = bcon
-    document.getElementById("lbl4").innerHTML = kcon
-    document.getElementById("lbl6").innerHTML = mcon 
-    document.getElementById("lbl8").innerHTML = gcon
-    document.getElementById("lbl10").innerHTML = tcon
-    document.getElementById("lbl12").innerHTML = pcon
-    document.getElementById("lbl14").innerHTML = econ
-    document.getElementById("lbl16").innerHTML = document.getElementById("input").value
-    document.getElementById("lbl18").innerHTML = ycon
+    document.getElementById("conversion-bit").innerHTML = bicon;
+    document.getElementById("conversion-byte").innerHTML = bcon
+    document.getElementById("conversion-kilobyte").innerHTML = kcon
+    document.getElementById("conversion-megabyte").innerHTML = mcon 
+    document.getElementById("conversion-gigabyte").innerHTML = gcon
+    document.getElementById("conversion-terrabyte").innerHTML = tcon
+    document.getElementById("conversion-petabyte").innerHTML = pcon
+    document.getElementById("conversion-exabyte").innerHTML = econ
+    document.getElementById("conversion-zettabyte").innerHTML = document.getElementById("input").value
+    document.getElementById("conversion-yottabyte").innerHTML = ycon
 }
 
 function convertYottabyte (x){
 
+    var bicon = yottabyteToBit(x);
     var bcon = yottabyteToByte(x);
     var kcon = yottabyteToKilobyte(x);
     var mcon = yottabyteToMegabyte(x);
@@ -671,15 +813,16 @@ function convertYottabyte (x){
     var econ = yottabyteToExabyte(x);
     var zcon = yottabyteToZettabyte(x);
 
-    document.getElementById("lbl2").innerHTML = bcon
-    document.getElementById("lbl4").innerHTML = kcon
-    document.getElementById("lbl6").innerHTML = mcon 
-    document.getElementById("lbl8").innerHTML = gcon
-    document.getElementById("lbl10").innerHTML = tcon
-    document.getElementById("lbl12").innerHTML = pcon
-    document.getElementById("lbl14").innerHTML = econ
-    document.getElementById("lbl16").innerHTML = zcon   
-    document.getElementById("lbl18").innerHTML = document.getElementById("input").value
+    document.getElementById("conversion-bit").innerHTML = bicon;
+    document.getElementById("conversion-byte").innerHTML = bcon
+    document.getElementById("conversion-kilobyte").innerHTML = kcon
+    document.getElementById("conversion-megabyte").innerHTML = mcon 
+    document.getElementById("conversion-gigabyte").innerHTML = gcon
+    document.getElementById("conversion-terrabyte").innerHTML = tcon
+    document.getElementById("conversion-petabyte").innerHTML = pcon
+    document.getElementById("conversion-exabyte").innerHTML = econ
+    document.getElementById("conversion-zettabyte").innerHTML = zcon   
+    document.getElementById("conversion-yottabyte").innerHTML = document.getElementById("input").value
 }
 
 var userInput = document.getElementById('input').value;
@@ -694,6 +837,10 @@ function bclick(clicked) {
     console.log(clicked)
 
     var userInput = document.getElementById('input').value
+
+     if (clicked == "bit") {
+       convertBit(userInput);
+    }
 
     if (clicked == "byte"){
 
@@ -749,6 +896,12 @@ function bclick(clicked) {
 
     
 }
+
+$("#bit").hover(function () {
+  var userInput = document.getElementById("input").value;
+  convertBit(userInput);
+  changeColor(this.id);
+});
 
 $("#byte").hover(function() {
     var userInput = document.getElementById('input').value

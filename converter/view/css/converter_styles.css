@@ -19,7 +19,7 @@ input {height: 40px; border-radius: 5px; font-size: 25px;}
 
 .convertButtons {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(4, 1fr);
   grid-gap: 15px;
   padding-top: 50px;
   padding-left: 100px;
@@ -78,7 +78,8 @@ a {font-size: 20px; font-family: 'Courier New', Courier, monospace;}
     font-size: 14px;
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
-    background-color: #ff7979;
+    /* background-color: #ff7979; */
+    background-color: blue;
   }
 
   .convertButtons {

@@ -709,8 +709,8 @@ function convertBit(x) {
     var zcon = bitToZettabyte(x);
     var ycon = bitToYottabyte(x);
 
-    document.getElementById("conversion-nibble").innerHTML = ncon;
     document.getElementById("conversion-bit").innerHTML = document.getElementById("input").value;
+    document.getElementById("conversion-nibble").innerHTML = ncon;
     document.getElementById("conversion-byte").innerHTML = bcon;
     document.getElementById("conversion-kilobyte").innerHTML = kcon;
     document.getElementById("conversion-megabyte").innerHTML = mcon;
@@ -736,9 +736,7 @@ function convertNibble(x) {
     var ycon = nibbleToYottabyte(x);
 
     document.getElementById("conversion-bit").innerHTML = bicon;
-    document.getElementById("conversion-nibble").innerHTML = document.getElementById(
-        "input"
-    ).value;
+    document.getElementById("conversion-nibble").innerHTML = document.getElementById("input").value;
     document.getElementById("conversion-byte").innerHTML = bcon;
     document.getElementById("conversion-kilobyte").innerHTML = kcon;
     document.getElementById("conversion-megabyte").innerHTML = mcon;
@@ -768,14 +766,14 @@ function convertByte(x) {
     document.getElementById("conversion-bit").innerHTML = bicon;
     document.getElementById("conversion-nibble").innerHTML = ncon;
     document.getElementById("conversion-byte").innerHTML = document.getElementById("input").value
-    document.getElementById("conversion-kilobyte").innerHTML = kcon
-    document.getElementById("conversion-megabyte").innerHTML = mcon 
-    document.getElementById("conversion-gigabyte").innerHTML = gcon
-    document.getElementById("conversion-terrabyte").innerHTML = tcon
-    document.getElementById("conversion-petabyte").innerHTML = pcon
-    document.getElementById("conversion-exabyte").innerHTML = econ
-    document.getElementById("conversion-zettabyte").innerHTML = zcon   
-    document.getElementById("conversion-yottabyte").innerHTML = ycon
+    document.getElementById("conversion-kilobyte").innerHTML = kcon;
+    document.getElementById("conversion-megabyte").innerHTML = mcon;
+    document.getElementById("conversion-gigabyte").innerHTML = gcon;
+    document.getElementById("conversion-terrabyte").innerHTML = tcon;
+    document.getElementById("conversion-petabyte").innerHTML = pcon;
+    document.getElementById("conversion-exabyte").innerHTML = econ;
+    document.getElementById("conversion-zettabyte").innerHTML = zcon;
+    document.getElementById("conversion-yottabyte").innerHTML = ycon;
 }
 
 function convertKilobyte (x){
@@ -793,15 +791,15 @@ function convertKilobyte (x){
 
     document.getElementById("conversion-bit").innerHTML = bicon;
     document.getElementById("conversion-nibble").innerHTML = ncon;
-    document.getElementById("conversion-byte").innerHTML = bcon
+    document.getElementById("conversion-byte").innerHTML = bcon;
     document.getElementById("conversion-kilobyte").innerHTML = document.getElementById("input").value
-    document.getElementById("conversion-megabyte").innerHTML = mcon 
-    document.getElementById("conversion-gigabyte").innerHTML = gcon
-    document.getElementById("conversion-terrabyte").innerHTML = tcon
-    document.getElementById("conversion-petabyte").innerHTML = pcon
-    document.getElementById("conversion-exabyte").innerHTML = econ
-    document.getElementById("conversion-zettabyte").innerHTML = zcon   
-    document.getElementById("conversion-yottabyte").innerHTML = ycon
+    document.getElementById("conversion-megabyte").innerHTML = mcon;
+    document.getElementById("conversion-gigabyte").innerHTML = gcon;
+    document.getElementById("conversion-terrabyte").innerHTML = tcon;
+    document.getElementById("conversion-petabyte").innerHTML = pcon;
+    document.getElementById("conversion-exabyte").innerHTML = econ;
+    document.getElementById("conversion-zettabyte").innerHTML = zcon; 
+    document.getElementById("conversion-yottabyte").innerHTML = ycon;
 }
 
 function convertMegabyte (x){
@@ -817,17 +815,17 @@ function convertMegabyte (x){
     var zcon = megabyteToZettabyte(x);
     var ycon = megabyteToYottabyte(x);
 
-    document.getElementById("conversion-bit").innerHTML = bicon;
+   document.getElementById("conversion-bit").innerHTML = bicon;
     document.getElementById("conversion-nibble").innerHTML = ncon;
-    document.getElementById("conversion-byte").innerHTML = bcon
-    document.getElementById("conversion-kilobyte").innerHTML = kcon
+    document.getElementById("conversion-byte").innerHTML = bcon;
+    document.getElementById("conversion-kilobyte").innerHTML = kcon;
     document.getElementById("conversion-megabyte").innerHTML = document.getElementById("input").value
-    document.getElementById("conversion-gigabyte").innerHTML = gcon
-    document.getElementById("conversion-terrabyte").innerHTML = tcon
-    document.getElementById("conversion-petabyte").innerHTML = pcon
-    document.getElementById("conversion-exabyte").innerHTML = econ
-    document.getElementById("conversion-zettabyte").innerHTML = zcon   
-    document.getElementById("conversion-yottabyte").innerHTML = ycon
+    document.getElementById("conversion-gigabyte").innerHTML = gcon;
+    document.getElementById("conversion-terrabyte").innerHTML = tcon;
+    document.getElementById("conversion-petabyte").innerHTML = pcon;
+    document.getElementById("conversion-exabyte").innerHTML = econ;
+    document.getElementById("conversion-zettabyte").innerHTML = zcon;
+    document.getElementById("conversion-yottabyte").innerHTML = ycon;
 }
 
 function convertGigabyte (x){
@@ -845,15 +843,15 @@ function convertGigabyte (x){
 
     document.getElementById("conversion-bit").innerHTML = bicon;
     document.getElementById("conversion-nibble").innerHTML = ncon;
-    document.getElementById("conversion-byte").innerHTML = bcon
-    document.getElementById("conversion-kilobyte").innerHTML = kcon
-    document.getElementById("conversion-megabyte").innerHTML = mcon 
+    document.getElementById("conversion-byte").innerHTML = bcon;
+    document.getElementById("conversion-kilobyte").innerHTML = kcon;
+    document.getElementById("conversion-megabyte").innerHTML = mcon;
     document.getElementById("conversion-gigabyte").innerHTML = document.getElementById("input").value
-    document.getElementById("conversion-terrabyte").innerHTML = tcon
-    document.getElementById("conversion-petabyte").innerHTML = pcon
-    document.getElementById("conversion-exabyte").innerHTML = econ
-    document.getElementById("conversion-zettabyte").innerHTML = zcon   
-    document.getElementById("conversion-yottabyte").innerHTML = ycon
+    document.getElementById("conversion-terrabyte").innerHTML = tcon;
+    document.getElementById("conversion-petabyte").innerHTML = pcon;
+    document.getElementById("conversion-exabyte").innerHTML = econ;
+    document.getElementById("conversion-zettabyte").innerHTML = zcon;  
+    document.getElementById("conversion-yottabyte").innerHTML = ycon;
 }
 
 function convertTerrabyte (x){
@@ -871,15 +869,15 @@ function convertTerrabyte (x){
 
     document.getElementById("conversion-bit").innerHTML = bicon;
     document.getElementById("conversion-nibble").innerHTML = ncon;
-    document.getElementById("conversion-byte").innerHTML = bcon
-    document.getElementById("conversion-kilobyte").innerHTML = kcon
-    document.getElementById("conversion-megabyte").innerHTML = mcon 
-    document.getElementById("conversion-gigabyte").innerHTML = gcon
+    document.getElementById("conversion-byte").innerHTML = bcon;
+    document.getElementById("conversion-kilobyte").innerHTML = kcon;
+    document.getElementById("conversion-megabyte").innerHTML = mcon;
+    document.getElementById("conversion-gigabyte").innerHTML = gcon;
     document.getElementById("conversion-terrabyte").innerHTML = document.getElementById("input").value
-    document.getElementById("conversion-petabyte").innerHTML = pcon
-    document.getElementById("conversion-exabyte").innerHTML = econ
-    document.getElementById("conversion-zettabyte").innerHTML = zcon   
-    document.getElementById("conversion-yottabyte").innerHTML = ycon
+    document.getElementById("conversion-petabyte").innerHTML = pcon;
+    document.getElementById("conversion-exabyte").innerHTML = econ;
+    document.getElementById("conversion-zettabyte").innerHTML = zcon;
+    document.getElementById("conversion-yottabyte").innerHTML = ycon;
 }
 
 function convertPetabyte (x){
@@ -897,15 +895,15 @@ function convertPetabyte (x){
 
     document.getElementById("conversion-bit").innerHTML = bicon;
     document.getElementById("conversion-nibble").innerHTML = ncon;
-    document.getElementById("conversion-byte").innerHTML = bcon
-    document.getElementById("conversion-kilobyte").innerHTML = kcon
-    document.getElementById("conversion-megabyte").innerHTML = mcon 
-    document.getElementById("conversion-gigabyte").innerHTML = gcon
-    document.getElementById("conversion-terrabyte").innerHTML = tcon
+    document.getElementById("conversion-byte").innerHTML = bcon;
+    document.getElementById("conversion-kilobyte").innerHTML = kcon;
+    document.getElementById("conversion-megabyte").innerHTML = mcon;
+    document.getElementById("conversion-gigabyte").innerHTML = gcon;
+    document.getElementById("conversion-terrabyte").innerHTML = tcon;
     document.getElementById("conversion-petabyte").innerHTML = document.getElementById("input").value
-    document.getElementById("conversion-exabyte").innerHTML = econ
-    document.getElementById("conversion-zettabyte").innerHTML = zcon   
-    document.getElementById("conversion-yottabyte").innerHTML = ycon
+    document.getElementById("conversion-exabyte").innerHTML = econ;
+    document.getElementById("conversion-zettabyte").innerHTML = zcon;
+    document.getElementById("conversion-yottabyte").innerHTML = ycon;
 }
 
 function convertExabyte (x){
@@ -923,15 +921,15 @@ function convertExabyte (x){
 
     document.getElementById("conversion-bit").innerHTML = bicon;
     document.getElementById("conversion-nibble").innerHTML = ncon;
-    document.getElementById("conversion-byte").innerHTML = bcon
-    document.getElementById("conversion-kilobyte").innerHTML = kcon
-    document.getElementById("conversion-megabyte").innerHTML = mcon 
-    document.getElementById("conversion-gigabyte").innerHTML = gcon
-    document.getElementById("conversion-terrabyte").innerHTML = tcon
-    document.getElementById("conversion-petabyte").innerHTML = pcon
+    document.getElementById("conversion-byte").innerHTML = bcon;
+    document.getElementById("conversion-kilobyte").innerHTML = kcon;
+    document.getElementById("conversion-megabyte").innerHTML = mcon;
+    document.getElementById("conversion-gigabyte").innerHTML = gcon;
+    document.getElementById("conversion-terrabyte").innerHTML = tcon;
+    document.getElementById("conversion-petabyte").innerHTML = pcon;
     document.getElementById("conversion-exabyte").innerHTML = document.getElementById("input").value
-    document.getElementById("conversion-zettabyte").innerHTML = zcon   
-    document.getElementById("conversion-yottabyte").innerHTML = ycon
+    document.getElementById("conversion-zettabyte").innerHTML = zcon;
+    document.getElementById("conversion-yottabyte").innerHTML = ycon;
 }
 
 function convertZettabyte (x){
@@ -949,15 +947,15 @@ function convertZettabyte (x){
 
     document.getElementById("conversion-bit").innerHTML = bicon;
     document.getElementById("conversion-nibble").innerHTML = ncon;
-    document.getElementById("conversion-byte").innerHTML = bcon
-    document.getElementById("conversion-kilobyte").innerHTML = kcon
-    document.getElementById("conversion-megabyte").innerHTML = mcon 
-    document.getElementById("conversion-gigabyte").innerHTML = gcon
-    document.getElementById("conversion-terrabyte").innerHTML = tcon
-    document.getElementById("conversion-petabyte").innerHTML = pcon
-    document.getElementById("conversion-exabyte").innerHTML = econ
+    document.getElementById("conversion-byte").innerHTML = bcon;
+    document.getElementById("conversion-kilobyte").innerHTML = kcon;
+    document.getElementById("conversion-megabyte").innerHTML = mcon;
+    document.getElementById("conversion-gigabyte").innerHTML = gcon;
+    document.getElementById("conversion-terrabyte").innerHTML = tcon;
+    document.getElementById("conversion-petabyte").innerHTML = pcon;
+    document.getElementById("conversion-exabyte").innerHTML = econ;
     document.getElementById("conversion-zettabyte").innerHTML = document.getElementById("input").value
-    document.getElementById("conversion-yottabyte").innerHTML = ycon
+    document.getElementById("conversion-yottabyte").innerHTML = ycon;
 }
 
 function convertYottabyte (x){
@@ -975,14 +973,14 @@ function convertYottabyte (x){
 
     document.getElementById("conversion-bit").innerHTML = bicon;
     document.getElementById("conversion-nibble").innerHTML = ncon;
-    document.getElementById("conversion-byte").innerHTML = bcon
-    document.getElementById("conversion-kilobyte").innerHTML = kcon
-    document.getElementById("conversion-megabyte").innerHTML = mcon 
-    document.getElementById("conversion-gigabyte").innerHTML = gcon
-    document.getElementById("conversion-terrabyte").innerHTML = tcon
-    document.getElementById("conversion-petabyte").innerHTML = pcon
-    document.getElementById("conversion-exabyte").innerHTML = econ
-    document.getElementById("conversion-zettabyte").innerHTML = zcon   
+    document.getElementById("conversion-byte").innerHTML = bcon;
+    document.getElementById("conversion-kilobyte").innerHTML = kcon;
+    document.getElementById("conversion-megabyte").innerHTML = mcon;
+    document.getElementById("conversion-gigabyte").innerHTML = gcon;
+    document.getElementById("conversion-terrabyte").innerHTML = tcon;
+    document.getElementById("conversion-petabyte").innerHTML = pcon;
+    document.getElementById("conversion-exabyte").innerHTML = econ;
+    document.getElementById("conversion-zettabyte").innerHTML = zcon;
     document.getElementById("conversion-yottabyte").innerHTML = document.getElementById("input").value
 }
 
@@ -1120,7 +1118,3 @@ $("#yottabyte").hover(function() {
     convertYottabyte(userInput)
     changeColor(this.id)
 })
-
-function numberWithCommas(x) {
-  return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
-}

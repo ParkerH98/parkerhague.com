@@ -833,7 +833,7 @@ function convertMegabyte (x){
 function convertGigabyte (x){
 
     var bicon = gigabyteToBit(x);
-    var ncon = gigabytebyteToNibble(x);
+    var ncon = gigabyteToNibble(x);
     var bcon = gigabyteToByte(x);
     var kcon = gigabyteToKilobyte(x);
     var mcon = gigabyteToMegabyte(x);
@@ -1000,23 +1000,23 @@ function bclick(clicked) {
     var userInput = document.getElementById('input').value
 
     if (clicked == "bit") {
+
        convertBit(userInput);
     }
     
     if (clicked == "niible") {
+
       convertNibble(userInput);
     }
 
     if (clicked == "byte"){
 
         convertByte(userInput)
-        
     }
 
     if (clicked == "kilobyte"){
 
         convertKilobyte(userInput)
-        
     }
 
     if (clicked == "megabyte"){
@@ -1053,8 +1053,6 @@ function bclick(clicked) {
 
         convertYottabyte(userInput) 
     }
-
-    
 }
 
 $("#bit").hover(function () {
@@ -1122,3 +1120,7 @@ $("#yottabyte").hover(function() {
     convertYottabyte(userInput)
     changeColor(this.id)
 })
+
+function numberWithCommas(x) {
+  return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+}

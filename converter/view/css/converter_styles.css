@@ -47,7 +47,7 @@ button:visited {background-color: #f9ca24;}
 
 .clicked {background-color: #f9ca24;}
 
-.btn > label {overflow-wrap: break-word;}
+label {overflow-wrap: break-word;}
 
 a {font-size: 20px; font-family: 'Courier New', Courier, monospace;}
 

@@ -4,6 +4,12 @@ html {
   font-family: 'Open Sans', sans-serif !important;
 }
 
+body{
+  margin: 0;
+  height: 100%;
+  overflow: hidden
+}
+
 *,
 *::before,
 *::after {
@@ -12,9 +18,13 @@ html {
   box-sizing: inherit;
 }
 
-.containerr {text-align: center;}
+.containerr {text-align: center; padding-top: 20px;}
 
 .btnContainer {display: inline-block;}
+
+.nav-wrapper{position: fixed; width: 100%;}
+
+.inputLabel {font-size: 35px; font-weight: bold;}
 
 input {height: 40px; border-radius: 5px; font-size: 25px;}
 
@@ -113,7 +123,5 @@ a {font-size: 20px; font-family: 'Courier New', Courier, monospace;}
     margin: 0;
     height: 100%;
     overflow: hidden
-
   }
-
 }

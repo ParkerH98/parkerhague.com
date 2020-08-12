@@ -61,15 +61,20 @@ a {font-size: 20px; font-family: 'Courier New', Courier, monospace;}
 
     max-height: 470px;
     max-width: 470px;
-    margin: 2px;
+    margin: 0px;
+    position: absolute;
+    top: 2%;
+    left: 2%;
   }
+
+  input {height: 40px; width: 250px; border-radius: 5px; font-size: 25px;}
 
   .btnContainer {
 
     max-width: 470px;
     max-height: 470px;
     padding: 10px;
-    margin: 10px;
+    margin: 0px;
   }
 
   .btn {
@@ -79,15 +84,14 @@ a {font-size: 20px; font-family: 'Courier New', Courier, monospace;}
     font-size: 14px;
     font-family: 'Courier New', Courier, monospace;
     text-align: center;
-    /* background-color: #ff7979; */
-    background-color: blue;
+    background-color: #ff7979;
   }
 
   .convertButtons {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 7px;
-    padding-top: 30px;
+    padding-top: 20px;
     padding-left: 5px;
     padding-right: 5px;
     padding-bottom: 5px;
@@ -99,7 +103,7 @@ a {font-size: 20px; font-family: 'Courier New', Courier, monospace;}
     font-size: 14px;
   }
 
-  .inputLabel {font-size: 30px;}
+  .inputLabel {font-size: 25px;}
 
   html,
   body {

@@ -15,7 +15,7 @@ var yottabyte;
 ///////////////////////////////////////////
 ///////////////////////////////////////////
 
-wordwordfunction bitToNibble(x) {
+function bitToNibble(x){
   var conversion = x / 4;
   return conversion;
 }

@@ -15,13 +15,18 @@ var yottabyte;
 ///////////////////////////////////////////
 ///////////////////////////////////////////
 
+wordwordfunction bitToNibble(x) {
+  var conversion = x / 4;
+  return conversion;
+}
+
 function bitToByte (x){
   var conversion = x / 8;
   return conversion;
 }
 
-function bitToNibble(x) {
-  var conversion = x / 4;
+function bitToWord(x) {
+  var conversion = x * 32;
   return conversion;
 }
 
@@ -85,6 +90,11 @@ function nibbleToBit(x) {
 
 function nibbleToByte (x){
   var conversion = x / 2;
+  return conversion;
+}
+
+function nibbleToWord(x) {
+  var conversion = x * 8;
   return conversion;
 }
 
@@ -152,6 +162,11 @@ function byteToNibble(x) {
   return conversion;
 }
 
+function byteToWord(x) {
+  var conversion = x * 4;
+  return conversion;
+}
+
 function byteToKilobyte (x){
 
     var conversion = x / Math.pow(2, 10);
@@ -200,6 +215,73 @@ function byteToYottabyte (x){
     return conversion;
 }
 
+// beginning of word conversion functions
+///////////////////////////////////////////
+///////////////////////////////////////////
+
+function wordToBit(x) {
+  var conversion = x * 32;
+  return conversion;
+}
+
+function wordToNibble (x){
+  var conversion = x * 8;
+  return conversion;
+}
+
+function wordToByte(x) {
+  var conversion = x * 4;
+  return conversion;
+}
+
+function wordToKilobyte (x){
+
+    var conversion = (x / 4) / Math.pow(2, 10);
+    return conversion;
+}
+
+function wordToMegabyte (x){
+
+    var conversion = (x / 4) / Math.pow(2, 20);
+    return conversion;
+}
+
+function wordToGigabyte (x){
+
+    var conversion = (x / 4) / Math.pow(2, 30);
+    return conversion;
+}
+
+function wordToTerrabyte (x){
+
+    var conversion = (x / 4) / Math.pow(2, 40);
+    return conversion;
+}
+
+function wordToPetabyte (x){
+
+    var conversion = (x / 4) / Math.pow(2, 50);
+    return conversion;
+}
+
+function wordToExabyte (x){
+
+    var conversion = (x / 4) / Math.pow(2, 60);
+    return conversion;
+}
+
+function wordToZettabyte (x){
+
+    var conversion = (x / 4) / Math.pow(2, 70);
+    return conversion;
+}
+
+function wordToYottabyte (x){
+
+    var conversion = (x / 4) / Math.pow(2, 80);
+    return conversion;
+}
+
 // beginning of kilobyte conversion functions
 ///////////////////////////////////////////
 ///////////////////////////////////////////
@@ -218,6 +300,11 @@ function kilobyteToByte (x){
 
     var conversion = x * Math.pow(2, 10);
     return conversion;
+}
+
+function kilobyteToWord(x) {
+  var conversion = x * Math.pow(2, 10) * 4;
+  return conversion;
 }
 
 function kilobyteToMegabyte (x){
@@ -282,6 +369,11 @@ function megabyteToByte (x){
     return conversion;
 }
 
+function megabyteToWord(x) {
+  var conversion = x * Math.pow(2, 20) * 4;
+  return conversion;
+}
+
 function megabyteToKilobyte (x){
 
     var conversion = x * Math.pow(2, 10);
@@ -342,6 +434,11 @@ function gigabyteToByte (x){
 
     var conversion = x * Math.pow(2, 30);
     return conversion;
+}
+
+function gigabyteToWord(x) {
+  var conversion = x * Math.pow(2, 30) * 4;
+  return conversion;
 }
 
 function gigabyteToKilobyte (x){
@@ -406,6 +503,11 @@ function terrabyteToByte (x){
     return conversion;
 }
 
+function terrabyteToWord(x) {
+  var conversion = x * Math.pow(2, 40) * 4;
+  return conversion;
+}
+
 function terrabyteToKilobyte (x){
 
     var conversion = x * Math.pow(2, 30);
@@ -466,6 +568,11 @@ function petabyteToByte (x){
 
     var conversion = x * Math.pow(2, 50);
     return conversion;
+}
+
+function petabyteToWord(x) {
+  var conversion = x * Math.pow(2, 50) * 4;
+  return conversion;
 }
 
 function petabyteToKilobyte (x){
@@ -530,6 +637,11 @@ function exabyteToByte (x){
     return conversion;
 }
 
+function exabyteToWord(x) {
+  var conversion = x * Math.pow(2, 60) * 4;
+  return conversion;
+}
+
 function exabyteToKilobyte (x){
 
     var conversion = x * Math.pow(2, 50);
@@ -590,6 +702,11 @@ function zettabyteToByte (x){
 
     var conversion = x * Math.pow(2, 70);
     return conversion;
+}
+
+function exabyteToWord(x) {
+  var conversion = x * Math.pow(2, 70) * 4;
+  return conversion;
 }
 
 function zettabyteToKilobyte (x){
@@ -654,6 +771,11 @@ function yottabyteToByte (x){
     return conversion;
 }
 
+function yottabyteToWord(x) {
+  var conversion = x * Math.pow(2, 80) * 4;
+  return conversion;
+}
+
 function yottabyteToKilobyte (x){
 
     var conversion = x * Math.pow(2, 70);
@@ -700,6 +822,7 @@ function convertBit(x) {
 
     var ncon = bitToNibble(x)
     var bcon = bitToByte(x);
+    var wcon = bitToWord(x);
     var kcon = bitToKilobyte(x);
     var mcon = bitToMegabyte(x);
     var gcon = bitToGigabyte(x);
@@ -712,6 +835,7 @@ function convertBit(x) {
     document.getElementById("conversion-bit").innerHTML = document.getElementById("input").value;
     document.getElementById("conversion-nibble").innerHTML = ncon;
     document.getElementById("conversion-byte").innerHTML = bcon;
+    document.getElementById("conversion-word").innerHTML = wcon;
     document.getElementById("conversion-kilobyte").innerHTML = kcon;
     document.getElementById("conversion-megabyte").innerHTML = mcon;
     document.getElementById("conversion-gigabyte").innerHTML = gcon;
@@ -726,6 +850,7 @@ function convertNibble(x) {
 
     var bicon = nibbleToBit(x);
     var bcon = nibbleToByte(x);
+    var wcon = nibbleToWord(x);
     var kcon = nibbleToKilobyte(x);
     var mcon = nibbleToMegabyte(x);
     var gcon = nibbleToGigabyte(x);
@@ -738,6 +863,7 @@ function convertNibble(x) {
     document.getElementById("conversion-bit").innerHTML = bicon;
     document.getElementById("conversion-nibble").innerHTML = document.getElementById("input").value;
     document.getElementById("conversion-byte").innerHTML = bcon;
+    document.getElementById("conversion-word").innerHTML = wcon;
     document.getElementById("conversion-kilobyte").innerHTML = kcon;
     document.getElementById("conversion-megabyte").innerHTML = mcon;
     document.getElementById("conversion-gigabyte").innerHTML = gcon;
@@ -752,6 +878,7 @@ function convertByte(x) {
 
     var bicon = byteToBit(x);
     var ncon = byteToNibble(x);
+    var wcon = byteToWord(x);
     var kcon = byteToKilobyte(x);
     var mcon = byteToMegabyte(x);
     var gcon = byteToGigabyte(x);
@@ -766,6 +893,35 @@ function convertByte(x) {
     document.getElementById("conversion-bit").innerHTML = bicon;
     document.getElementById("conversion-nibble").innerHTML = ncon;
     document.getElementById("conversion-byte").innerHTML = document.getElementById("input").value
+    document.getElementById("conversion-word").innerHTML = wcon;
+    document.getElementById("conversion-kilobyte").innerHTML = kcon;
+    document.getElementById("conversion-megabyte").innerHTML = mcon;
+    document.getElementById("conversion-gigabyte").innerHTML = gcon;
+    document.getElementById("conversion-terrabyte").innerHTML = tcon;
+    document.getElementById("conversion-petabyte").innerHTML = pcon;
+    document.getElementById("conversion-exabyte").innerHTML = econ;
+    document.getElementById("conversion-zettabyte").innerHTML = zcon;
+    document.getElementById("conversion-yottabyte").innerHTML = ycon;
+}
+
+function convertWord(x) {
+
+    var bicon = wordToBit(x);
+    var ncon = wordToNibble(x);
+    var bcon = wordToByte(x);
+    var kcon = wordToKilobyte(x);
+    var mcon = wordToMegabyte(x);
+    var gcon = wordToGigabyte(x);
+    var tcon = wordToTerrabyte(x);
+    var pcon = wordToPetabyte(x);
+    var econ = wordToExabyte(x);
+    var zcon = wordToZettabyte(x);
+    var ycon = wordToYottabyte(x);
+
+    document.getElementById("conversion-bit").innerHTML = bicon;
+    document.getElementById("conversion-nibble").innerHTML = ncon;
+    document.getElementById("conversion-byte").innerHTML = bcon;
+    document.getElementById("conversion-word").innerHTML = document.getElementById("input").value;
     document.getElementById("conversion-kilobyte").innerHTML = kcon;
     document.getElementById("conversion-megabyte").innerHTML = mcon;
     document.getElementById("conversion-gigabyte").innerHTML = gcon;
@@ -781,6 +937,7 @@ function convertKilobyte (x){
     var bicon = kilobyteToBit(x);
     var ncon = kilobyteToNibble(x);
     var bcon = kilobyteToByte(x);
+    var wcon = kilobyteToWord(x);
     var mcon = kilobyteToMegabyte(x);
     var gcon = kilobyteToGigabyte(x);
     var tcon = kilobyteToTerrabyte(x);
@@ -792,6 +949,7 @@ function convertKilobyte (x){
     document.getElementById("conversion-bit").innerHTML = bicon;
     document.getElementById("conversion-nibble").innerHTML = ncon;
     document.getElementById("conversion-byte").innerHTML = bcon;
+    document.getElementById("conversion-word").innerHTML = wcon;
     document.getElementById("conversion-kilobyte").innerHTML = document.getElementById("input").value
     document.getElementById("conversion-megabyte").innerHTML = mcon;
     document.getElementById("conversion-gigabyte").innerHTML = gcon;
@@ -807,6 +965,7 @@ function convertMegabyte (x){
     var bicon = megabyteToBit(x);
     var ncon = megabyteToNibble(x);
     var bcon = megabyteToByte(x);
+    var wcon = megabyteToWord(x);
     var kcon = megabyteToKilobyte(x);
     var gcon = megabyteToGigabyte(x);
     var tcon = megabyteToTerrabyte(x);
@@ -818,6 +977,7 @@ function convertMegabyte (x){
    document.getElementById("conversion-bit").innerHTML = bicon;
     document.getElementById("conversion-nibble").innerHTML = ncon;
     document.getElementById("conversion-byte").innerHTML = bcon;
+    document.getElementById("conversion-word").innerHTML = wcon;
     document.getElementById("conversion-kilobyte").innerHTML = kcon;
     document.getElementById("conversion-megabyte").innerHTML = document.getElementById("input").value
     document.getElementById("conversion-gigabyte").innerHTML = gcon;
@@ -833,6 +993,7 @@ function convertGigabyte (x){
     var bicon = gigabyteToBit(x);
     var ncon = gigabyteToNibble(x);
     var bcon = gigabyteToByte(x);
+    var wcon = gigabyteToWord(x);
     var kcon = gigabyteToKilobyte(x);
     var mcon = gigabyteToMegabyte(x);
     var tcon = gigabyteToTerrabyte(x);
@@ -844,6 +1005,7 @@ function convertGigabyte (x){
     document.getElementById("conversion-bit").innerHTML = bicon;
     document.getElementById("conversion-nibble").innerHTML = ncon;
     document.getElementById("conversion-byte").innerHTML = bcon;
+    document.getElementById("conversion-word").innerHTML = wcon;
     document.getElementById("conversion-kilobyte").innerHTML = kcon;
     document.getElementById("conversion-megabyte").innerHTML = mcon;
     document.getElementById("conversion-gigabyte").innerHTML = document.getElementById("input").value
@@ -859,6 +1021,7 @@ function convertTerrabyte (x){
     var bicon = terrabyteToBit(x);
     var ncon = terrabyteToNibble(x);
     var bcon = terrabyteToByte(x);
+    var wcon = terrabyteToWord(x);
     var kcon = terrabyteToKilobyte(x);
     var mcon = terrabyteToMegabyte(x);
     var gcon = terrabyteToGigabyte(x);
@@ -870,6 +1033,7 @@ function convertTerrabyte (x){
     document.getElementById("conversion-bit").innerHTML = bicon;
     document.getElementById("conversion-nibble").innerHTML = ncon;
     document.getElementById("conversion-byte").innerHTML = bcon;
+    document.getElementById("conversion-word").innerHTML = wcon;
     document.getElementById("conversion-kilobyte").innerHTML = kcon;
     document.getElementById("conversion-megabyte").innerHTML = mcon;
     document.getElementById("conversion-gigabyte").innerHTML = gcon;
@@ -885,6 +1049,7 @@ function convertPetabyte (x){
     var bicon = petabyteToBit(x);
     var ncon = petabyteToNibble(x);
     var bcon = petabyteToByte(x);
+    var wcon = petabyteToWord(x);
     var kcon = petabyteToKilobyte(x);
     var mcon = petabyteToMegabyte(x);
     var gcon = petabyteToGigabyte(x);
@@ -896,6 +1061,7 @@ function convertPetabyte (x){
     document.getElementById("conversion-bit").innerHTML = bicon;
     document.getElementById("conversion-nibble").innerHTML = ncon;
     document.getElementById("conversion-byte").innerHTML = bcon;
+    document.getElementById("conversion-word").innerHTML = wcon;
     document.getElementById("conversion-kilobyte").innerHTML = kcon;
     document.getElementById("conversion-megabyte").innerHTML = mcon;
     document.getElementById("conversion-gigabyte").innerHTML = gcon;
@@ -911,6 +1077,7 @@ function convertExabyte (x){
     var bicon = exabyteToBit(x);
     var ncon = exabyteToNibble(x);
     var bcon = exabyteToByte(x);
+    var wcon = exabyteToWord(x);
     var kcon = exabyteToKilobyte(x);
     var mcon = exabyteToMegabyte(x);
     var gcon = exabyteToGigabyte(x);
@@ -922,6 +1089,7 @@ function convertExabyte (x){
     document.getElementById("conversion-bit").innerHTML = bicon;
     document.getElementById("conversion-nibble").innerHTML = ncon;
     document.getElementById("conversion-byte").innerHTML = bcon;
+    document.getElementById("conversion-word").innerHTML = wcon;
     document.getElementById("conversion-kilobyte").innerHTML = kcon;
     document.getElementById("conversion-megabyte").innerHTML = mcon;
     document.getElementById("conversion-gigabyte").innerHTML = gcon;
@@ -937,6 +1105,7 @@ function convertZettabyte (x){
     var bicon = zettabyteToBit(x);
     var ncon = zettabyteToNibble(x);
     var bcon = zettabyteToByte(x);
+    var wcon = zettabyteToWord(x);
     var kcon = zettabyteToKilobyte(x);
     var mcon = zettabyteToMegabyte(x);
     var gcon = zettabyteToGigabyte(x);
@@ -948,6 +1117,7 @@ function convertZettabyte (x){
     document.getElementById("conversion-bit").innerHTML = bicon;
     document.getElementById("conversion-nibble").innerHTML = ncon;
     document.getElementById("conversion-byte").innerHTML = bcon;
+    document.getElementById("conversion-word").innerHTML = wcon;
     document.getElementById("conversion-kilobyte").innerHTML = kcon;
     document.getElementById("conversion-megabyte").innerHTML = mcon;
     document.getElementById("conversion-gigabyte").innerHTML = gcon;
@@ -963,6 +1133,7 @@ function convertYottabyte (x){
     var bicon = yottabyteToBit(x);
     var ncon = yottabyteToNibble(x);
     var bcon = yottabyteToByte(x);
+    var wcon = yottabyteToWord(x);
     var kcon = yottabyteToKilobyte(x);
     var mcon = yottabyteToMegabyte(x);
     var gcon = yottabyteToGigabyte(x);
@@ -974,6 +1145,7 @@ function convertYottabyte (x){
     document.getElementById("conversion-bit").innerHTML = bicon;
     document.getElementById("conversion-nibble").innerHTML = ncon;
     document.getElementById("conversion-byte").innerHTML = bcon;
+    document.getElementById("conversion-word").innerHTML = wcon;
     document.getElementById("conversion-kilobyte").innerHTML = kcon;
     document.getElementById("conversion-megabyte").innerHTML = mcon;
     document.getElementById("conversion-gigabyte").innerHTML = gcon;
@@ -1010,6 +1182,10 @@ function bclick(clicked) {
     if (clicked == "byte"){
 
         convertByte(userInput)
+    }
+
+    if (clicked == "word") {
+      convertWord(userInput);
     }
 
     if (clicked == "kilobyte"){
@@ -1070,6 +1246,12 @@ $("#byte").hover(function() {
     convertByte(userInput)
     changeColor(this.id)
 })
+
+$("#word").hover(function () {
+  var userInput = document.getElementById("input").value;
+  convertWord(userInput);
+  changeColor(this.id);
+});
 
 $("#kilobyte").hover(function() {
     var userInput = document.getElementById('input').value

@@ -67,6 +67,9 @@ a {font-size: 20px; font-family: 'Courier New', Courier, monospace;}
     left: 2%;
   }
 
+  /* I did this to fix the problem of page content showing behind the nav bar */
+  .nav-wrapper{z-index: 999; position: fixed; width: 100%;}
+
   input {height: 40px; width: 250px; border-radius: 5px; font-size: 25px;}
 
   .btnContainer {
@@ -103,7 +106,7 @@ a {font-size: 20px; font-family: 'Courier New', Courier, monospace;}
     font-size: 14px;
   }
 
-  .inputLabel {font-size: 25px;}
+  .inputLabel {font-size: 30px; font-weight: bold;}
 
   html,
   body {

@@ -30,7 +30,7 @@
             <div id="naver" class="container-fluid p-0">
 
                 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                    <a class="navbar-brand" href="resume.aspx">Parker Hague's Resume</a>
+                    <a class="navbar-brand" href="../resume.aspx">Parker Hague's Resume</a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse"
                         data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
                         aria-label="Toggle navigation">
@@ -46,12 +46,12 @@
                                     Projects
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="#">Data Converter</a></li>
+                                    <li><a class="dropdown-item" href="converter.aspx">Data Converter</a></li>
                                     <li><a class="dropdown-item" href="#">IOS App</a></li>
                                     <li>
                                         <hr class="dropdown-divider" />
                                     </li>
-                                    <li><a class="dropdown-item" href="#">GitHub</a></li>
+                                    <li><a class="dropdown-item" href="https://github.com/ParkerH98">GitHub</a></li>
                                 </ul>
                             </li>
                             <li class="nav-item">

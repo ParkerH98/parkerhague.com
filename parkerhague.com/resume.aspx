@@ -49,8 +49,9 @@
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&family=Roboto:wght@100&display=swap" rel="stylesheet"/> 
- <%--   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700&display=swap"
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;500&family=Roboto:wght@100&display=swap"
+        rel="stylesheet" />
+    <%--   <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;400;500;700&display=swap"
         rel="stylesheet" />--%>
 
     <!-- Icons -->
@@ -167,7 +168,7 @@
             <%-- nav container --%>
             <div id="naver" class="container-fluid p-0">
 
-                 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
                     <a class="navbar-brand" href="../resume.aspx">Parker Hague's Resume</a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse"
                         data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
@@ -184,7 +185,8 @@
                                     Projects
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="DataConverter/converter.aspx">Data Converter</a></li>
+                                    <li><a class="dropdown-item" href="DataConverter/converter.aspx">Data Converter</a>
+                                    </li>
                                     <li><a class="dropdown-item" href="#">IOS App</a></li>
                                     <li>
                                         <hr class="dropdown-divider" />
@@ -287,9 +289,30 @@
                     <!-- BEGINNING OF LEFT COLUMN FOR PROGRAMMING LANGUAGES -->
                     <div class="col-md-6">
                         <ul class="no-bullets">
-
                             <li>
                                 <span class="skills-title">Java</span>
+                                <span class="skills-score">
+                                    <span class="glyphicon glyphicon-star filled"></span>
+                                    <span class="glyphicon glyphicon-star filled"></span>
+                                    <span class="glyphicon glyphicon-star filled"></span>
+                                    <span class="glyphicon glyphicon-star filled"></span>
+                                    <span class="glyphicon glyphicon-star filled"></span>
+                                </span>
+                            </li>
+
+                            <li>
+                                <span class="skills-title">C#</span>
+                                <span class="skills-score">
+                                    <span class="glyphicon glyphicon-star filled"></span>
+                                    <span class="glyphicon glyphicon-star filled"></span>
+                                    <span class="glyphicon glyphicon-star filled"></span>
+                                    <span class="glyphicon glyphicon-star filled"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                </span>
+                            </li>
+
+                            <li>
+                                <span class="skills-title">HTML(5)</span>
                                 <span class="skills-score">
                                     <span class="glyphicon glyphicon-star filled"></span>
                                     <span class="glyphicon glyphicon-star filled"></span>
@@ -305,13 +328,13 @@
                                     <span class="glyphicon glyphicon-star filled"></span>
                                     <span class="glyphicon glyphicon-star filled"></span>
                                     <span class="glyphicon glyphicon-star filled"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star filled"></span>
                                     <span class="glyphicon glyphicon-star"></span>
                                 </span>
                             </li>
 
                             <li>
-                                <span class="skills-title">HTML(5)</span>
+                                <span class="skills-title">CSS</span>
                                 <span class="skills-score">
                                     <span class="glyphicon glyphicon-star filled"></span>
                                     <span class="glyphicon glyphicon-star filled"></span>
@@ -322,7 +345,18 @@
                             </li>
 
                             <li>
-                                <span class="skills-title">C#</span>
+                                <span class="skills-title">JavaScript</span>
+                                <span class="skills-score">
+                                    <span class="glyphicon glyphicon-star filled"></span>
+                                    <span class="glyphicon glyphicon-star filled"></span>
+                                    <span class="glyphicon glyphicon-star filled"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                </span>
+                            </li>
+
+                            <li>
+                                <span class="skills-title">Swift</span>
                                 <span class="skills-score">
                                     <span class="glyphicon glyphicon-star filled"></span>
                                     <span class="glyphicon glyphicon-star filled"></span>
@@ -337,39 +371,25 @@
                     <!-- BEGINNING OF RIGHT COLUMN FOR PROGRAMMING LANGUAGES -->
                     <div class="col-md-6">
                         <ul class="no-bullets">
-
-
-
                             <li>
-                                <span class="skills-title">Swift (IOS)</span>
+                                <span class="skills-title">MIPS</span>
                                 <span class="skills-score">
                                     <span class="glyphicon glyphicon-star filled"></span>
                                     <span class="glyphicon glyphicon-star filled"></span>
                                     <span class="glyphicon glyphicon-star filled"></span>
                                     <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star "></span>
+                                    <span class="glyphicon glyphicon-star"></span>
                                 </span>
                             </li>
 
                             <li>
-                                <span class="skills-title">JavaScript</span>
+                                <span class="skills-title">Prolog</span>
                                 <span class="skills-score">
                                     <span class="glyphicon glyphicon-star filled"></span>
                                     <span class="glyphicon glyphicon-star filled"></span>
                                     <span class="glyphicon glyphicon-star"></span>
                                     <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star "></span>
-                                </span>
-                            </li>
-
-                            <li>
-                                <span class="skills-title">CSS</span>
-                                <span class="skills-score">
-                                    <span class="glyphicon glyphicon-star filled"></span>
-                                    <span class="glyphicon glyphicon-star filled"></span>
                                     <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                    <span class="glyphicon glyphicon-star "></span>
                                 </span>
                             </li>
 
@@ -381,6 +401,50 @@
                                     <span class="glyphicon glyphicon-star"></span>
                                     <span class="glyphicon glyphicon-star"></span>
                                     <span class="glyphicon glyphicon-star "></span>
+                                </span>
+                            </li>
+
+                            <li>
+                                <span class="skills-title">Haskell</span>
+                                <span class="skills-score">
+                                    <span class="glyphicon glyphicon-star filled"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                </span>
+                            </li>
+
+                            <li>
+                                <span class="skills-title">Lisp</span>
+                                <span class="skills-score">
+                                    <span class="glyphicon glyphicon-star filled"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                </span>
+                            </li>
+
+                            <li>
+                                <span class="skills-title">ML</span>
+                                <span class="skills-score">
+                                    <span class="glyphicon glyphicon-star filled"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                </span>
+                            </li>
+
+                            <li>
+                                <span class="skills-title">Ruby</span>
+                                <span class="skills-score">
+                                    <span class="glyphicon glyphicon-star filled"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
                                 </span>
                             </li>
                         </ul>
@@ -398,6 +462,16 @@
                     <!-- BEGINNING OF LEFT COLUMN FOR SKILLS -->
                     <div class="col-md-6">
                         <ul class="no-bullets">
+                            <li>
+                                <span class="skills-title">Excel (formulas & pivot tables)</span>
+                                <span class="skills-score">
+                                    <span class="glyphicon glyphicon-star filled"></span>
+                                    <span class="glyphicon glyphicon-star filled"></span>
+                                    <span class="glyphicon glyphicon-star filled"></span>
+                                    <span class="glyphicon glyphicon-star filled"></span>
+                                    <span class="glyphicon glyphicon-star filled"></span>
+                                </span>
+                            </li>
 
                             <li>
                                 <span class="skills-title">Object Oriented Programming</span>
@@ -406,7 +480,18 @@
                                     <span class="glyphicon glyphicon-star filled"></span>
                                     <span class="glyphicon glyphicon-star filled"></span>
                                     <span class="glyphicon glyphicon-star filled"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star filled"></span>
+                                </span>
+                            </li>
+
+                            <li>
+                                <span class="skills-title">Visual Studio</span>
+                                <span class="skills-score">
+                                    <span class="glyphicon glyphicon-star filled"></span>
+                                    <span class="glyphicon glyphicon-star filled"></span>
+                                    <span class="glyphicon glyphicon-star filled"></span>
+                                    <span class="glyphicon glyphicon-star filled"></span>
+                                    <span class="glyphicon glyphicon-star filled"></span>
                                 </span>
                             </li>
 
@@ -432,6 +517,36 @@
                                 </span>
                             </li>
 
+                        </ul>
+                    </div>
+                    <!-- ENDING OF LEFT COLUMN FOR SKILLS -->
+                    <!-- BEGINNING OF RIGHT COLUMN FOR SKILLS -->
+                    <div class="col-md-6">
+                        <ul class="no-bullets">
+
+                            <li>
+                                <span class="skills-title">MySQL</span>
+                                <span class="skills-score">
+                                    <span class="glyphicon glyphicon-star filled"></span>
+                                    <span class="glyphicon glyphicon-star filled"></span>
+                                    <span class="glyphicon glyphicon-star filled"></span>
+                                    <span class="glyphicon glyphicon-star filled"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                </span>
+                            </li>
+
+
+                            <li>
+                                <span class="skills-title">VMware vSphere</span>
+                                <span class="skills-score">
+                                    <span class="glyphicon glyphicon-star filled"></span>
+                                    <span class="glyphicon glyphicon-star filled"></span>
+                                    <span class="glyphicon glyphicon-star filled"></span>
+                                    <span class="glyphicon glyphicon-star filled"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                </span>
+                            </li>
+
                             <li>
                                 <span class="skills-title">IIS Windows Web Server</span>
                                 <span class="skills-score">
@@ -443,27 +558,8 @@
                                 </span>
                             </li>
 
-                        </ul>
-                    </div>
-                    <!-- ENDING OF LEFT COLUMN FOR SKILLS -->
-                    <!-- BEGINNING OF RIGHT COLUMN FOR SKILLS -->
-                    <div class="col-md-6">
-                        <ul class="no-bullets">
-
                             <li>
-                                <span class="skills-title">Excel (formulas & pivot tables)</span>
-                                <span class="skills-score">
-                                    <span class="glyphicon glyphicon-star filled"></span>
-                                    <span class="glyphicon glyphicon-star filled"></span>
-                                    <span class="glyphicon glyphicon-star filled"></span>
-                                    <span class="glyphicon glyphicon-star filled"></span>
-                                    <span class="glyphicon glyphicon-star"></span>
-                                </span>
-                            </li>
-
-
-                            <li>
-                                <span class="skills-title">MySQL</span>
+                                <span class="skills-title">Kali Linux</span>
                                 <span class="skills-score">
                                     <span class="glyphicon glyphicon-star filled"></span>
                                     <span class="glyphicon glyphicon-star filled"></span>
@@ -474,24 +570,13 @@
                             </li>
 
                             <li>
-                                <span class="skills-title">VMware vSphere</span>
+                                <span class="skills-title">Linux Operating System</span>
                                 <span class="skills-score">
                                     <span class="glyphicon glyphicon-star filled"></span>
                                     <span class="glyphicon glyphicon-star filled"></span>
                                     <span class="glyphicon glyphicon-star filled"></span>
-                                    <span class="glyphicon glyphicon-star "></span>
-                                    <span class="glyphicon glyphicon-star "></span>
-                                </span>
-                            </li>
-
-                            <li>
-                                <span class="skills-title">MIPS Assembly Language</span>
-                                <span class="skills-score">
-                                    <span class="glyphicon glyphicon-star filled"></span>
-                                    <span class="glyphicon glyphicon-star filled"></span>
-                                    <span class="glyphicon glyphicon-star "></span>
-                                    <span class="glyphicon glyphicon-star "></span>
-                                    <span class="glyphicon glyphicon-star "></span>
+                                    <span class="glyphicon glyphicon-star"></span>
+                                    <span class="glyphicon glyphicon-star"></span>
                                 </span>
                             </li>
                         </ul>
@@ -500,8 +585,6 @@
                 </div>
             </div>
         </div>
-        </div>
-
 
         <div id="experiences" class="container">
             <h2>Experience</h2>
@@ -577,35 +660,32 @@
                 </div>
             </div>
 
-            <hr/>
+            <hr />
 
+            <%-- section heading --%>
             <h3>Relevant Coursework</h3>
 
             <div id="relcw" class="experiences">
 
+                <%-- subheading --%>
                 <h4>Computer Science</h4>
 
                 <div class="row">
 
-
                     <div class="col-md-12">
 
                         <ul class="no-bullets">
-
                             <li>
                                 <span class="courseName">Data Structures & Algorithm Analysis</span>
                                 <span class="ani">
                                     <span class="grade">A</span>
-
                                 </span>
-
                             </li>
 
                             <li>
                                 <span class="courseName">Computer Systems</span>
                                 <span class="ani">
                                     <span class="grade">A</span>
-
                                 </span>
                             </li>
 
@@ -613,15 +693,27 @@
                                 <span class="courseName">Java II</span>
                                 <span class="ani">
                                     <span class="grade">A</span>
-
                                 </span>
-
                             </li>
 
+                            <li>
+                                <span class="courseName">Organization of Programming Languages</span>
+                                <span class="ani">
+                                    <span class="grade">A</span>
+                                </span>
+                            </li>
+
+                            <li>
+                                <span class="courseName">Theoretical Foundations of Computing</span>
+                                <span class="ani">
+                                    <span class="grade">A</span>
+                                </span>
+                            </li>
                         </ul>
                     </div>
                 </div>
 
+                <%-- subheading --%>
                 <h4>Management Information Systems</h4>
                 <div class="row">
 
@@ -641,13 +733,27 @@
                                 <span class="courseName">Data Communications & Networking</span>
                                 <span class="ani">
                                     <span class="grade">A</span>
+                                </span>
+                            </li>
 
+                            <li>
+                                <span class="courseName">Applied Systems Security (Ethical Hacking)</span>
+                                <span class="ani">
+                                    <span class="grade">A</span>
+                                </span>
+                            </li>
+
+                            <li>
+                                <span class="courseName">Web Application Development</span>
+                                <span class="ani">
+                                    <span class="grade">A</span>
                                 </span>
                             </li>
                         </ul>
                     </div>
                 </div>
 
+                <%-- subheading --%>
                 <h4>Math</h4>
 
                 <div class="row">
@@ -655,32 +761,33 @@
                     <div class="col-md-12">
 
                         <ul class="no-bullets">
-
                             <li>
                                 <span class="courseName">Calculus I</span>
                                 <span class="ani">
                                     <span class="grade">B</span>
                                 </span>
-
                             </li>
 
                             <li>
                                 <span class="courseName">Calculus II</span>
                                 <span class="ani">
                                     <span class="grade">C</span>
-
                                 </span>
                             </li>
-
 
                             <li>
                                 <span class="courseName">Calculus III</span>
                                 <span class="ani">
                                     <span class="grade">A</span>
-
                                 </span>
                             </li>
 
+                            <li>
+                                <span class="courseName">Linear Algebra</span>
+                                <span class="ani">
+                                    <span class="grade">A</span>
+                                </span>
+                            </li>
                         </ul>
                     </div>
                 </div>
@@ -688,6 +795,7 @@
 
             <hr />
 
+            <%-- subheading --%>
             <h3>Work Experience</h3>
 
             <div class="experiences">

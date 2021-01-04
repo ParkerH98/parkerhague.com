@@ -6,46 +6,19 @@
 
 <head>
 
+    <!-- Required meta tags -->
     <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
     <meta http-equiv="content-script-type" content="text/javascript" />
     <meta http-equiv="content-style-type" content="text/css" />
     <meta http-equiv="content-language" content="nl" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
     <meta name="author" content="Parker Hague" />
     <meta name="description"
         content="I'm Parker Hague, an ever learning - aspiring software developer. This is my web resume." />
     <meta name="keywords"
-        content="Parker Hague, Interactive Resume, software developer, student, junior, intermediate, Interactive CV, Resume, CV, Data Converter, Data Conversion, ParkerH98, Algorithms, Java, C#, Swift, JavaScript, Oklahoma State University" />
+        content="Parker Hague, Interactive Resume, software developer, student, junior, intermediate, OSU, Resume, Oklahoma State, Data Converter, Data Conversion, ParkerH98, Algorithms, Java, C#, Swift, JavaScript, Oklahoma State University" />
     <meta name="robots" content="index, follow" />
-    <meta name="revisit-after" content="1 days" />
-
-    <title>Parker Hague - Web Resume</title>
-
-    <!-- Favicons -->
-    <link rel="apple-touch-icon-precomposed" sizes="57x57" href="Content/Images/Favicon/apple-touch-icon-57x57.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="114x114"
-        href="Content/Images/Favicon/apple-touch-icon-114x114.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="72x72" href="Content/Images/Favicon/apple-touch-icon-72x72.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="144x144"
-        href="Content/Images/Favicon/apple-touch-icon-144x144.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="60x60" href="Content/Images/Favicon/apple-touch-icon-60x60.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="120x120"
-        href="Content/Images/Favicon/apple-touch-icon-120x120.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="76x76" href="Content/Images/Favicon/apple-touch-icon-76x76.png" />
-    <link rel="apple-touch-icon-precomposed" sizes="152x152"
-        href="Content/Images/Favicon/apple-touch-icon-152x152.png" />
-    <link rel="icon" type="image/png" href="Content/Images/Favicon/favicon-196x196.png" sizes="196x196" />
-    <link rel="icon" type="image/png" href="Content/Images/Favicon/favicon-96x96.png" sizes="96x96" />
-    <link rel="icon" type="image/png" href="Content/Images/Favicon/favicon-32x32.png" sizes="32x32" />
-    <link rel="icon" type="image/png" href="Content/Images/Favicon/favicon-16x16.png" sizes="16x16" />
-    <link rel="icon" type="image/png" href="Content/Images/Favicon/favicon-128.png" sizes="128x128" />
-    <meta name="application-name" content="&nbsp;" />
-    <meta name="msapplication-TileColor" content="#FFFFFF" />
-    <meta name="msapplication-TileImage" content="mstile-144x144.png" />
-    <meta name="msapplication-square70x70logo" content="mstile-70x70.png" />
-    <meta name="msapplication-square150x150logo" content="mstile-150x150.png" />
-    <meta name="msapplication-wide310x150logo" content="mstile-310x150.png" />
-    <meta name="msapplication-square310x310logo" content="mstile-310x310.png" />
+    <meta name="revisit-after" content="7 days" />
 
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.gstatic.com" />
@@ -58,20 +31,37 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet" />
 
-    <%-- Bootstrap --%>
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="57x57" href="/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
+
+    <!-- Bootstrap CSS -->
     <script src="Content/Scripts/jquery-3.5.1.min.js"></script>
     <script src="Content/Scripts/bootstrap.min.js"></script>
     <link href="Content/Bootstrap/bootstrap.min.css" rel="stylesheet" />
 
     <!-- Main Stylesheet -->
-    <link href="Content/CSS/resume_styles.css" rel="stylesheet" />
+    <link href="Content/CSS/resume_styles.min.css" rel="stylesheet" />
 
-    <!-- Favicons -->
-    <link rel="shortcut icon" href="view\images\favicon.ico" type="image/x-icon" />
-    <link rel="icon" href="view\images\favicon.ico" type="image/x-icon" />
+    <title>Parker Hague - Web Resume</title>
 
     <!-- Begin Inspectlet Asynchronous Code -->
-    <script type="text/javascript">
+    <%--<script type="text/javascript">
         (function () {
             window.__insp = window.__insp || [];
             __insp.push(['wid', 106094269]);
@@ -90,7 +80,7 @@
             };
             setTimeout(ldinsp, 0);
         })();
-    </script>
+    </script>--%>
     <!-- End Inspectlet Asynchronous Code -->
 
 
@@ -107,6 +97,7 @@
 
         gtag('config', 'UA-173009144-1');
     </script>
+
 </head>
 
 <body data-spy="scroll" data-target="#naver" data-offset="100">
@@ -169,7 +160,7 @@
             <div id="naver" class="container-fluid p-0">
 
                 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                    <a class="navbar-brand" href="../resume.aspx">Parker Hague's Resume</a>
+                    <a class="navbar-brand" href="https://www.parkerhague.com">Parker Hague's Resume</a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse"
                         data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
                         aria-label="Toggle navigation">
@@ -251,11 +242,9 @@
                         <figcaption>
                             <h3>GitHub</h3>
                             <p>Numerous mini coding projects in an assortment of languages including
-                                python, swift, and
-                                C#
-                                to name a few.</p>
-                            <p><strong>Tags:</strong> <br />IOS App, Web Bot Script, Data Conversion Web
-                                App,
+                                python, swift, and C# to name a few.
+                            </p>
+                            <p><strong>Tags:</strong> <br />IOS App, Web Bot Script, Data Conversion Web App,
                                 Minesweeper
                             </p>
                             <a href="https://github.com/ParkerH98" target="_blank">View more</a>
@@ -265,11 +254,8 @@
                         </figcaption>
                     </figure>
                 </div>
-
             </div>
-
         </div>
-
 
         <div class="background-white">
             <div id="skills" class="container">
@@ -453,7 +439,16 @@
 
                 </div>
 
-                <hr />
+
+
+                <div class="mt-5">
+                    <label class="text-muted font-weight-light">
+                        <small>*filled stars indicate experience and/or proficiency</small>
+                    </label>
+                    <hr class="mt-0" />
+                </div>
+
+
 
                 <h3>Tools and Technologies</h3>
 
@@ -596,7 +591,6 @@
 
             <h3>Education</h3>
 
-
             <div class="experiences">
 
                 <div class="experience row">
@@ -706,7 +700,7 @@
                             <li>
                                 <span class="courseName">Theoretical Foundations of Computing</span>
                                 <span class="ani">
-                                    <span class="grade">A</span>
+                                    <span class="grade">B</span>
                                 </span>
                             </li>
                         </ul>
@@ -881,9 +875,7 @@
                         <p>
                             <strong>Service Technician</strong>
 
-
                             <span class="hidden-phone">
-
                                 <ul>
                                     <li>Installed tires, wheels, and TPMS sensors in vehicles</li>
                                     <li>Repaired injuries to tires</li>
@@ -915,57 +907,55 @@
                 <hr />
 
                 <div class="row">
-                    <div class="col-md-6">
-                        <ul class="no-bullets">
-                            <li>
-                                <a href="http://twitter.com/parkerhague" target="_blank">
-                                    <i class="fa fa-twitter-square" aria-hidden="true"
-                                        style="color: #00acee; margin-right: 10px;"></i>
-                                    http://twitter.com/parkerhague </a>
-                            </li>
-                        </ul>
+                    <div class="col-md-6 text-center">
+
+                        <a href="http://twitter.com/parkerhague" target="_blank">
+                            <i class="fa fa-twitter-square" aria-hidden="true"
+                                style="color: #00acee; margin-right: 10px;"></i>
+                            http://twitter.com/parkerhague </a>
                     </div>
-                    <div class="col-md-6">
-                        <ul class="no-bullets">
-                            <li>
-                                <a href="mailto:parkerhague@gmail.com">
-                                    <span class="icon icon-email"></span>
-                                    <span class="glyphicon glyphicon-envelope" style="margin-right: 10px;"></span>
-                                    <span style="unicode-bidi:bidi-override;">
-                                        parkerhague@gmail.com </span>
-                                </a>
-                            </li>
-                        </ul>
+                    <div class="col-md-6 text-center">
+
+                        <a href="mailto:parkerhague@gmail.com">
+                            <span class="icon icon-email"></span>
+                            <span class="glyphicon glyphicon-envelope" style="margin-right: 10px;"></span>
+                            <span style="unicode-bidi:bidi-override;">
+                                parkerhague@gmail.com </span>
+                        </a>
                     </div>
                 </div>
 
                 <hr />
 
-                <div class="text-center">
-
-                    <%-- twitter embed code --%>
-                    <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button"
-                        data-text="Parker Hague - Software Developer - Web Resume" data-url="www.parkerhague.com:8080"
-                        data-via="parkerhague" data-related="" data-show-count="false">Tweet @parkerhague</a>
-                    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
-                    <iframe id="twitter-widget-1" scrolling="no" frameborder="0" allowtransparency="true"
-                        class="twitter-share-button twitter-share-button-rendered twitter-tweet-button"
-                        title="Twitter Tweet Button"
-                        style="position: static; visibility: visible; width: 62px; height: 20px;"
-                        data-url="http://parkerhague.com:8080/?ref=twitter"></iframe>
-                    <script>
-                        ! function (d, s, id) {
-                            var js, fjs = d.getElementsByTagName(s)[0],
-                                p = /^http:/.test(d.location) ? 'http' : 'https';
-                            if (!d.getElementById(id)) {
-                                js = d.createElement(s);
-                                js.id = id;
-                                js.src = p + '://platform.twitter.com/widgets.js';
-                                fjs.parentNode.insertBefore(js, fjs);
-                            }
-                        }(document, 'script', 'twitter-wjs');
-                    </script>
+                <div class="row">
+                    <div class="col-sm-12 text-center">
+                        <%-- twitter embed code --%>
+                        <a href="https://twitter.com/share?ref_src=twsrc%5Etfw" class="twitter-share-button"
+                            data-text="Parker Hague - Software Developer - Web Resume"
+                            data-url="https://www.parkerhague.com" data-via="parkerhague" data-related=""
+                            data-show-count="false">Tweet @parkerhague</a>
+                        <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+                        <iframe id="twitter-widget-1" scrolling="no" frameborder="0" allowtransparency="true"
+                            class="twitter-share-button twitter-share-button-rendered twitter-tweet-button"
+                            title="Twitter Tweet Button"
+                            style="position: static; visibility: visible; width: 1px; height: 20px;"
+                            data-url="http://parkerhague.com:8080/?ref=twitter"></iframe>
+                        <script>
+                            ! function (d, s, id) {
+                                var js, fjs = d.getElementsByTagName(s)[0],
+                                    p = /^http:/.test(d.location) ? 'http' : 'https';
+                                if (!d.getElementById(id)) {
+                                    js = d.createElement(s);
+                                    js.id = id;
+                                    js.src = p + '://platform.twitter.com/widgets.js';
+                                    fjs.parentNode.insertBefore(js, fjs);
+                                }
+                            }(document, 'script', 'twitter-wjs');
+                        </script>
+                    </div>
                 </div>
+
+
             </div>
         </div>
 

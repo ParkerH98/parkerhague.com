@@ -34,6 +34,8 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <FilesToIncludeForPublish>AllFilesInProjectFolder</FilesToIncludeForPublish>
+    <LegacyPublishPropertiesPageEnabled>true</LegacyPublishPropertiesPageEnabled>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -76,27 +78,37 @@
     <Content Include="Content\Bootstrap\bootstrap.css" />
     <Content Include="Content\Bootstrap\bootstrap.min.css" />
     <Content Include="Content\CSS\converter_styles.css" />
+    <Content Include="Content\CSS\converter_stylestest.css" />
     <Content Include="Content\CSS\resume_styles.css" />
+    <Content Include="Content\CSS\resume_styles.min.css" />
+    <Content Include="Content\CSS\colors.txt" />
     <Content Include="Content\Images\converter_image.png" />
-    <Content Include="Content\Images\Favicon\apple-touch-icon-114x114.png" />
-    <Content Include="Content\Images\Favicon\apple-touch-icon-120x120.png" />
-    <Content Include="Content\Images\Favicon\apple-touch-icon-144x144.png" />
-    <Content Include="Content\Images\Favicon\apple-touch-icon-152x152.png" />
-    <Content Include="Content\Images\Favicon\apple-touch-icon-57x57.png" />
-    <Content Include="Content\Images\Favicon\apple-touch-icon-60x60.png" />
-    <Content Include="Content\Images\Favicon\apple-touch-icon-72x72.png" />
-    <Content Include="Content\Images\Favicon\apple-touch-icon-76x76.png" />
-    <Content Include="Content\Images\Favicon\favicon-128.png" />
+    <Content Include="Content\Images\Favicon\android-icon-144x144.png" />
+    <Content Include="Content\Images\Favicon\android-icon-192x192.png" />
+    <Content Include="Content\Images\Favicon\android-icon-36x36.png" />
+    <Content Include="Content\Images\Favicon\android-icon-48x48.png" />
+    <Content Include="Content\Images\Favicon\android-icon-72x72.png" />
+    <Content Include="Content\Images\Favicon\android-icon-96x96.png" />
+    <Content Include="Content\Images\Favicon\apple-icon-114x114.png" />
+    <Content Include="Content\Images\Favicon\apple-icon-120x120.png" />
+    <Content Include="Content\Images\Favicon\apple-icon-144x144.png" />
+    <Content Include="Content\Images\Favicon\apple-icon-152x152.png" />
+    <Content Include="Content\Images\Favicon\apple-icon-180x180.png" />
+    <Content Include="Content\Images\Favicon\apple-icon-57x57.png" />
+    <Content Include="Content\Images\Favicon\apple-icon-60x60.png" />
+    <Content Include="Content\Images\Favicon\apple-icon-72x72.png" />
+    <Content Include="Content\Images\Favicon\apple-icon-76x76.png" />
+    <Content Include="Content\Images\Favicon\apple-icon-precomposed.png" />
+    <Content Include="Content\Images\Favicon\apple-icon.png" />
+    <Content Include="Content\Images\Favicon\browserconfig.xml" />
     <Content Include="Content\Images\Favicon\favicon-16x16.png" />
-    <Content Include="Content\Images\Favicon\favicon-196x196.png" />
     <Content Include="Content\Images\Favicon\favicon-32x32.png" />
     <Content Include="Content\Images\Favicon\favicon-96x96.png" />
     <Content Include="Content\Images\Favicon\favicon.ico" />
-    <Content Include="Content\Images\Favicon\mstile-144x144.png" />
-    <Content Include="Content\Images\Favicon\mstile-150x150.png" />
-    <Content Include="Content\Images\Favicon\mstile-310x150.png" />
-    <Content Include="Content\Images\Favicon\mstile-310x310.png" />
-    <Content Include="Content\Images\Favicon\mstile-70x70.png" />
+    <Content Include="Content\Images\Favicon\ms-icon-144x144.png" />
+    <Content Include="Content\Images\Favicon\ms-icon-150x150.png" />
+    <Content Include="Content\Images\Favicon\ms-icon-310x310.png" />
+    <Content Include="Content\Images\Favicon\ms-icon-70x70.png" />
     <Content Include="Content\Images\github_repo.png" />
     <Content Include="Content\Images\parkerhague.JPG" />
     <Content Include="Content\Scripts\bootstrap.bundle.js" />
@@ -109,6 +121,7 @@
     <Content Include="Content\Scripts\esm\popper-utils.min.js" />
     <Content Include="Content\Scripts\esm\popper.js" />
     <Content Include="Content\Scripts\esm\popper.min.js" />
+    <Content Include="Content\Images\Favicon\manifest.json" />
     <None Include="Content\Scripts\jquery-3.5.1.intellisense.js" />
     <Content Include="Content\Scripts\jquery-3.5.1.js" />
     <Content Include="Content\Scripts\jquery-3.5.1.min.js" />
@@ -187,7 +200,9 @@
     <Content Include="Content\Scripts\umd\popper.js" />
     <Content Include="Content\Scripts\umd\popper.min.js" />
     <Content Include="DataConverter\converter.aspx" />
+    <Content Include="DataConverter\converter_test.aspx" />
     <Content Include="resume.aspx" />
+    <Content Include="resume.min.aspx" />
     <Content Include="Web.config" />
     <None Include="Properties\PublishProfiles\IISProfile.pubxml" />
   </ItemGroup>
@@ -199,6 +214,13 @@
     <Compile Include="DataConverter\converter.aspx.designer.cs">
       <DependentUpon>converter.aspx</DependentUpon>
     </Compile>
+    <Compile Include="DataConverter\converter_test.aspx.cs">
+      <DependentUpon>converter_test.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="DataConverter\converter_test.aspx.designer.cs">
+      <DependentUpon>converter_test.aspx</DependentUpon>
+    </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="resume.aspx.cs">
       <DependentUpon>resume.aspx</DependentUpon>
@@ -206,6 +228,13 @@
     </Compile>
     <Compile Include="resume.aspx.designer.cs">
       <DependentUpon>resume.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="resume.min.aspx.cs">
+      <DependentUpon>resume.min.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="resume.min.aspx.designer.cs">
+      <DependentUpon>resume.min.aspx</DependentUpon>
     </Compile>
   </ItemGroup>
   <ItemGroup>
@@ -216,7 +245,6 @@
     <Content Include="Content\Bootstrap\bootstrap.css.map" />
     <Content Include="Content\Bootstrap\bootstrap.min.css.map" />
     <Content Include="Content\Images\.DS_Store" />
-    <Content Include="Content\Images\Favicon\.DS_Store" />
     <Content Include="Content\Scripts\bootstrap.bundle.js.map" />
     <Content Include="Content\Scripts\bootstrap.bundle.min.js.map" />
     <Content Include="Content\Scripts\bootstrap.js.map" />
@@ -252,6 +280,7 @@
   <ItemGroup>
     <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
   </ItemGroup>
+  <ItemGroup />
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
     <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>

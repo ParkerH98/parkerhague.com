@@ -7,6 +7,7 @@ body {
 
 body {
     background: #C4DFE6;
+
     font-size: 15px;
     line-height: 1.64;
 }
@@ -38,12 +39,14 @@ h2,
 h3 {
     font-family: 'Oswald', sans-serif;
     font-weight: 300;
-    color: #07575B;
+    color: #1995AD;
+
 }
 
 h2 {
     font-size: 54px;
     text-align: center;
+    color: #07575B;
 }
 
 p {
@@ -83,21 +86,11 @@ hr {
     filter: alpha(opacity=20);
 }
 
-.btn-primary {
-    background-color: #22A39F;
-    border-color: #1c8784;
-}
-
-.btn-primary:hover {
-    background-color: #1c8784;
-    border-color: #1c8784;
-}
-
-
 /* NAVBAR SECTION */
 /* shows active element for scrollspy */
 .active {
-    background-color: #66A5AD;
+    background-color: #07575B;
+
 }
 
 /* brings to top */
@@ -108,15 +101,17 @@ hr {
 }
 
 /* sets text color white */
-    #naver li a {
-        color: #fff;
-        font-size: 1.9rem;
-        padding-left: 1rem;
-        padding-right: 1rem;
-    }
+#naver li a {
+    color: #fff;
+    font-size: 1.9rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
 
+/*adjusts big text on left side of navbar*/
 .navbar-brand {
     font-size: 2.5rem;
+    color: #fff;
 }
 
 /* spacing from side scroll bar & bg color */
@@ -132,22 +127,18 @@ hr {
 /* highlights links on hover */
 #naver li:hover,
 li:focus-within {
-    background: #66A5AD;
+    background: #07575B;
     cursor: pointer;
 }
 
-#naver ul > li > ul :hover {
-    background-color: #66A5AD;
+#naver ul>li>ul :hover {
+    background-color: #07575B;
     cursor: pointer;
-}
-
-.navbar-header .navbar-brand {
-    color: #fff;
 }
 
 /* opens dropdown on hover */
-#naver ul li:hover > ul,
-ul li:focus-within > ul,
+#naver ul li:hover>ul,
+ul li:focus-within>ul,
 ul li ul:hover,
 ul li ul:focus {
     visibility: visible;
@@ -171,7 +162,7 @@ at the top of the page (position:fixed and top:0) */
 /* NAVBAR SECTION */
 
 .background-white {
-    background: #FFFFFF;
+    background: #F1F1F2;
     width: 100%;
     padding: 0;
     margin: 0;
@@ -186,11 +177,11 @@ at the top of the page (position:fixed and top:0) */
     padding: 40px 180px;
 }
 
-#aboutMe .row > div {
+#aboutMe .row>div {
     margin-bottom: 20px;
 }
 
-#aboutMe .row > div img {
+#aboutMe .row>div img {
     width: 100%;
     max-width: 246px;
     height: auto;
@@ -200,7 +191,7 @@ at the top of the page (position:fixed and top:0) */
     margin-bottom: 20px;
 }
 
-#experiences .experience p > strong {
+#experiences .experience p>strong {
     display: block;
     padding-top: 8px;
     margin-bottom: 10px;
@@ -212,7 +203,7 @@ at the top of the page (position:fixed and top:0) */
 }
 
 #experiences .experience .experience-details * {
-    color: #66A5AD;
+    color: #07575B;
 }
 
 #experiences .experience .experience-details .seperator {
@@ -220,25 +211,25 @@ at the top of the page (position:fixed and top:0) */
 }
 
 /* SKILLS SECTION */
-#skills ul > li {
+#skills ul>li {
     min-height: 30px;
     padding: 3px 0px;
 }
 
-#skills ul > li:hover {
+#skills ul>li:hover {
     background: #F2F2F2;
 }
 
-#skills ul > li .skills-title {
+#skills ul>li .skills-title {
     display: inline-block;
     width: 60%;
 }
 
-#skills ul > li .skills-score {
+#skills ul>li .skills-score {
     float: right;
 }
 
-#skills ul > li .skills-score .glyphicon {
+#skills ul>li .skills-score .glyphicon {
     color: #DFE0E0;
     /*font-size: 14px;*/
     -webkit-transition: all 0.3s;
@@ -247,11 +238,11 @@ at the top of the page (position:fixed and top:0) */
     transition: all 0.3s;
 }
 
-#skills ul > li .skills-score .glyphicon.filled {
-    color: #66A5AD;
+#skills ul>li .skills-score .glyphicon.filled {
+    color: #07575B;
 }
 
-#skills ul > li:hover .skills-score .glyphicon {
+#skills ul>li:hover .skills-score .glyphicon {
     margin-left: 2px;
 }
 
@@ -259,19 +250,19 @@ at the top of the page (position:fixed and top:0) */
 
 /* RELEVANT COURSEOWRK SECTION */
 
-#relcw ul > li {
+#relcw ul>li {
     border-bottom: 1px solid;
 }
 
-    #relcw ul > li:hover {
-        background: #F2F2F2;
-    }
+#relcw ul>li:hover {
+    background: #F2F2F2;
+}
 
-        #relcw ul > li:hover .ani .grade {
-            -webkit-transform: scale(1.4);
-            -ms-transform: scale(1.4);
-            transform: scale(1.4);
-        }
+#relcw ul>li:hover .ani .grade {
+    -webkit-transform: scale(1.4);
+    -ms-transform: scale(1.4);
+    transform: scale(1.4);
+}
 
 #relcw h4 {
     padding-top: 40px;
@@ -293,14 +284,14 @@ at the top of the page (position:fixed and top:0) */
     float: right;
     font-size: 19px;
     font-weight: bold;
-    color: #66A5AD;
+    color: #07575B;
     float: right;
 }
 
 /* END RELEVANT COURSEWORK SECTION */
 
 
-#projects .row > div {
+#projects .row>div {
     margin-bottom: 30px;
 }
 
@@ -309,58 +300,58 @@ at the top of the page (position:fixed and top:0) */
     overflow: hidden;
 }
 
-    #projects figure h3 {
-        color: #FFF;
-        font-weight: 600;
-        margin-bottom: 5px;
-    }
+#projects figure h3 {
+    color: #FFF;
+    font-weight: 600;
+    margin-bottom: 5px;
+}
 
-    #projects figure p > strong {
-        width: 60px;
-        display: inline-block;
-        margin: 0px;
-    }
+#projects figure p>strong {
+    width: 60px;
+    display: inline-block;
+    margin: 0px;
+}
 
-    #projects figure img {
-        width: 110%;
-    }
+#projects figure img {
+    width: 110%;
+}
 
-    #projects figure figcaption {
-        padding: 20px 30px;
-        position: absolute;
-        top: 0px;
-        left: 0px;
-        height: 100%;
-        width: 100%;
-    }
+#projects figure figcaption {
+    padding: 20px 30px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+}
 
-    #projects figure a {
-        z-index: 1000;
-        text-indent: 200%;
-        white-space: nowrap;
-        font-size: 0;
-        opacity: 0;
-        position: absolute;
-        top: 0px;
-        left: 0px;
-        height: 100%;
-        width: 100%;
-    }
+#projects figure a {
+    z-index: 1000;
+    text-indent: 200%;
+    white-space: nowrap;
+    font-size: 0;
+    opacity: 0;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    height: 100%;
+    width: 100%;
+}
 
-    #projects figure .icon {
-        background: #66A5AD;
-        position: absolute;
-        top: 0px;
-        right: 0px;
-        width: 48px;
-        height: 48px;
-    }
+#projects figure .icon {
+    background: #07575B;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    width: 48px;
+    height: 48px;
+}
 
-        #projects figure .icon span {
-            font-size: 18px;
-            line-height: 18px;
-            padding: 15px;
-        }
+#projects figure .icon span {
+    font-size: 18px;
+    line-height: 18px;
+    padding: 15px;
+}
 
 
 
@@ -369,29 +360,29 @@ at the top of the page (position:fixed and top:0) */
     padding-bottom: 200px;
 }
 
-    #contact h2,
-    #contact .row * {
-        color: #FFFFFF;
-    }
+#contact h2,
+#contact .row * {
+    color: #FFFFFF;
+}
 
-    #contact a {
-        display: block;
-        line-height: 32px;
-        margin-bottom: 20px;
-        opacity: 0.6;
-        filter: alpha(opacity=60);
-    }
+#contact a {
+    display: block;
+    line-height: 32px;
+    margin-bottom: 20px;
+    opacity: 0.6;
+    filter: alpha(opacity=60);
+}
 
-        #contact a .icon {
-            float: left;
-            margin-right: 20px;
-        }
+#contact a .icon {
+    float: left;
+    margin-right: 20px;
+}
 
-        #contact a:hover {
-            opacity: 1;
-            filter: alpha(opacity=100);
-            text-decoration: none;
-        }
+#contact a:hover {
+    opacity: 1;
+    filter: alpha(opacity=100);
+    text-decoration: none;
+}
 
 
 @media (max-width: 1200px) {
@@ -402,17 +393,17 @@ at the top of the page (position:fixed and top:0) */
 
 @media (max-width: 767px) {
 
-    .navbar .nav > li {
+    .navbar .nav>li {
         height: 40px;
     }
 
-        .navbar .nav > li a {
-            height: 40px;
-            text-align: center;
-            padding-top: 20px;
-            font-weight: 600;
-            color: #FFFFFF;
-        }
+    .navbar .nav>li a {
+        height: 40px;
+        text-align: center;
+        padding-top: 20px;
+        font-weight: 600;
+        color: #FFFFFF;
+    }
 
     .fixed .navbar {
         top: 0px;
@@ -432,7 +423,7 @@ at the top of the page (position:fixed and top:0) */
         text-align: center;
     }
 
-    #experiences .experience .experience-details > span {
+    #experiences .experience .experience-details>span {
         display: block;
         margin-bottom: 6px;
     }
@@ -446,10 +437,10 @@ at the top of the page (position:fixed and top:0) */
         padding-bottom: 60px;
     }
 
-        #contact a .icon {
-            float: left;
-            margin-right: 10px;
-        }
+    #contact a .icon {
+        float: left;
+        margin-right: 10px;
+    }
 }
 
 @media (max-width: 520px) {
@@ -493,74 +484,74 @@ height: 300px;
 /*---------------*/
 
 figure.effect {
-    background: #66A5AD;
+    background: #1995AD;
     color: #FFF;
 }
 
-    figure.effect img {
-        width: -webkit-calc(100% + 20px);
-        width: calc(100% + 20px);
-        -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-        transition: opacity 0.35s, transform 0.35s;
-        -webkit-transform: translate3d(-10px, 0, 0);
-        transform: translate3d(-10px, 0, 0);
-        -webkit-backface-visibility: hidden;
-        backface-visibility: hidden;
-    }
+figure.effect img {
+    width: -webkit-calc(100% + 20px);
+    width: calc(100% + 20px);
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: translate3d(-10px, 0, 0);
+    transform: translate3d(-10px, 0, 0);
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
 
-    figure.effect:hover img {
-        opacity: 0.2;
-        -webkit-transform: translate3d(0, 0, 0);
-        transform: translate3d(0, 0, 0);
-    }
+figure.effect:hover img {
+    opacity: 0.2;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
 
-    figure.effect figcaption {
-        text-align: left;
-    }
+figure.effect figcaption {
+    text-align: left;
+}
 
-    figure.effect h3 {
-        position: relative;
-        overflow: hidden;
-        padding-bottom: 20px;
-        opacity: 0;
-        -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-        transition: opacity 0.35s, transform 0.35s;
-    }
+figure.effect h3 {
+    position: relative;
+    overflow: hidden;
+    padding-bottom: 20px;
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+}
 
-    figure.effect:hover h3 {
-        opacity: 1;
-    }
+figure.effect:hover h3 {
+    opacity: 1;
+}
 
-    figure.effect h3::after {
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        height: 2px;
-        background: #fff;
-        content: '';
-        -webkit-transition: -webkit-transform 0.35s;
-        transition: transform 0.35s;
-        -webkit-transform: translate3d(-100%, 0, 0);
-        transform: translate3d(-100%, 0, 0);
-    }
+figure.effect h3::after {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: #fff;
+    content: '';
+    -webkit-transition: -webkit-transform 0.35s;
+    transition: transform 0.35s;
+    -webkit-transform: translate3d(-100%, 0, 0);
+    transform: translate3d(-100%, 0, 0);
+}
 
-    figure.effect:hover h3::after {
-        -webkit-transform: translate3d(0, 0, 0);
-        transform: translate3d(0, 0, 0);
-    }
+figure.effect:hover h3::after {
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}
 
-    figure.effect p {
-        padding-top: 10px;
-        opacity: 0;
-        -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
-        transition: opacity 0.35s, transform 0.35s;
-        -webkit-transform: translate3d(100%, 0, 0);
-        transform: translate3d(100%, 0, 0);
-    }
+figure.effect p {
+    padding-top: 10px;
+    opacity: 0;
+    -webkit-transition: opacity 0.35s, -webkit-transform 0.35s;
+    transition: opacity 0.35s, transform 0.35s;
+    -webkit-transform: translate3d(100%, 0, 0);
+    transform: translate3d(100%, 0, 0);
+}
 
-    figure.effect:hover p {
-        opacity: 1;
-        -webkit-transform: translate3d(0, 0, 0);
-        transform: translate3d(0, 0, 0);
-    }
+figure.effect:hover p {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+}

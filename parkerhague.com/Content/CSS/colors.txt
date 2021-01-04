@@ -1,0 +1,13 @@
+﻿Project Colors:
+
+off-white: #F1F1F2 (bg)
+gray: #BCBABE
+baby blue: #A1D6E2 (bg)
+teal blue: #1995AD (h2 accents)
+dark blue: #063852 (h1)
+
+
+old colors:
+
+light blue: #C4DFE6
+dark blue: #07575B

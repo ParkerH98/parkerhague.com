@@ -1,0 +1,127 @@
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+  font-family: 'Open Sans', sans-serif !important;
+}
+
+body{
+  margin: 0;
+  height: 100%;
+  overflow: hidden
+}
+
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+.containerr {text-align: center; padding-top: 20px;}
+
+.btnContainer {display: inline-block;}
+
+.nav-wrapper{position: fixed; width: 100%;}
+
+.inputLabel {font-size: 35px; font-weight: bold;}
+
+input {height: 40px; border-radius: 5px; font-size: 25px;}
+
+.convertButtons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-gap: 15px;
+  padding-top: 50px;
+  padding-left: 100px;
+  padding-right: 100px;
+  padding-bottom: 100px;
+  vertical-align: top;
+}
+
+.btn {
+  height: 145px;
+  width: 145px;
+  border-radius: 20px;
+  font-size: 19px;
+  font-family: 'Courier New', Courier, monospace;
+  text-align: center;
+  background-color: #ff7979;
+}
+
+body {background-color: #95a5a6;}
+
+button:hover {background-color: #f9ca24;}
+
+button:visited {background-color: #f9ca24;}
+
+.clicked {background-color: #f9ca24;}
+
+label {overflow-wrap: break-word;}
+
+a {font-size: 20px; font-family: 'Courier New', Courier, monospace;}
+
+.inputLabel {font-size: 25px;}
+
+.datatypeLabel {font-weight: bold; font-size: 18px;}
+
+@media (max-device-width: 480px) {
+
+  .containerr {
+
+    max-height: 470px;
+    max-width: 470px;
+    margin: 0px;
+    position: absolute;
+    top: 2%;
+    left: 2%;
+  }
+
+  /* I did this to fix the problem of page content showing behind the nav bar */
+  .nav-wrapper{z-index: 999; position: fixed; width: 100%;}
+
+  input {height: 40px; width: 250px; border-radius: 5px; font-size: 25px;}
+
+  .btnContainer {
+
+    max-width: 470px;
+    max-height: 470px;
+    padding: 10px;
+    margin: 0px;
+  }
+
+  .btn {
+    height: 105px;
+    width: 105px;
+    border-radius: 20px;
+    font-size: 14px;
+    font-family: 'Courier New', Courier, monospace;
+    text-align: center;
+    background-color: #ff7979;
+  }
+
+  .convertButtons {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 7px;
+    padding-top: 20px;
+    padding-left: 5px;
+    padding-right: 5px;
+    padding-bottom: 5px;
+    vertical-align: top;
+  }
+
+  .datatypeLabel {
+    font-weight: bold;
+    font-size: 14px;
+  }
+
+  .inputLabel {font-size: 30px; font-weight: bold;}
+
+  html,
+  body {
+    margin: 0;
+    height: 100%;
+    overflow: hidden
+  }
+}

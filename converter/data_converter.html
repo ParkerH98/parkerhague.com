@@ -1,0 +1,151 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Data Converter</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8">
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="view\css\css\bootstrap.css">
+
+    <!-- Main Stylesheet -->
+    <link rel="stylesheet" href=view/css/converter_styles.css> </head> 
+    
+    <body>
+
+    <!-- <a href="data_converter_no_gui.html">CLICK HERE FOR NON-GUI VERSION</a> -->
+
+    <div class="nav-wrapper" style="height:50px;">
+
+        <nav id="naver" class="navbar navbar-inverse fixed-top">
+
+            <div class="container-fluid">
+
+                <div class="navbar-header">
+
+                    <a class="navbar-brand" href="https://parkerhague.com">Parker Hague's Website</a>
+                    <button type="button" class="navbar-toggle" data-toggle="collapse"
+                        data-target=".navbar-ex1-collapse">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                </div>
+
+                <div class="collapse navbar-collapse navbar-ex1-collapse" style="z-index: 999;">
+
+                    <ul class="nav navbar-nav navbar-right">
+
+                        <li>
+
+                            <a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#projects">Projects
+                                <span class="caret"></span></a>
+                            <ul class="dropdown-menu">
+                                <li><a class="nav-link" href="#">High Low IOS App</a></li>
+                                <li><a class="nav-link" href="https://github.com/ParkerH98">GitHub</a></li>
+                            </ul>
+                        </li>
+                        <li><a class="nav-link" href="https://www.parkerhague.com/#contact">Contact</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+    </div>
+
+
+    <div class="containerr">
+
+        <div class="btnContainer">
+
+            <div class="inputContainer">
+
+                <br><br>
+                <label for="input" style="display: block" class="inputLabel">Type Here to Convert</label><br>
+                <input type="text" , id="input" , name="input" placeholder="Enter a number value">
+
+            </div>
+
+            <div class="convertButtons">
+
+                <button class="btn" id="bit" onclick="changeColor(this.id)">
+                    <label for="bit" id="type-bit" class="datatypeLabel"><br>Bit<br><br></label>
+                    <label for="bit" id="conversion-bit"><br></label>
+                </button>
+
+                <button class="btn" id="nibble" onclick="changeColor(this.id)">
+                    <label for="nibble" id="type-nibble" class="datatypeLabel"><br>Nibble<br><br></label>
+                    <label for="nibble" id="conversion-nibble"><br></label>
+                </button>
+
+                <button class="btn" id="byte" onclick="changeColor(this.id)">
+                    <label for="byte" id="type-byte" class="datatypeLabel"><br>Byte<br><br></label>
+                    <label for="byte" id="conversion-byte"><br></label>
+                </button>
+
+                <button class="btn" id="word" onclick="changeColor(this.id)">
+                    <label for="word" id="type-word" class="datatypeLabel"><br>Word<br><br></label>
+                    <label for="word" id="conversion-word"><br></label>
+                </button>
+
+                <button class="btn" id="kilobyte" onclick="changeColor(this.id)">
+                    <label for="kilobyte" id="type-kilobyte" class="datatypeLabel"><br>Kilobyte<br><br></label>
+                    <label for="kilobyte" id="conversion-kilobyte"><br></label>
+                </button>
+
+                <button class="btn" id="megabyte" onclick="changeColor(this.id)">
+                    <label for="megabyte" id="type-megabyte" class="datatypeLabel"><br>Megabyte<br><br></label>
+                    <label for="megabyte" id="conversion-megabyte"><br></label>
+                </button>
+
+                <button class="btn" id="gigabyte" onclick="changeColor(this.id)">
+                    <label for="gigabyte" id="type-gigabyte" class="datatypeLabel"><br>Gigabyte<br><br></label>
+                    <label for="gigabyte" id="conversion-gigabyte"><br></label>
+                </button>
+                <button class="btn" id="terrabyte" onclick="changeColor(this.id)">
+                    <label for="terrabyte" id="type-terrabyte" class="datatypeLabel"><br>Terrabyte<br><br></label>
+                    <label for="terrabyte" id="conversion-terrabyte"><br></label>
+                </button>
+                <button class="btn" id="petabyte" onclick="changeColor(this.id)">
+                    <label for="petabyte" id="type-petabyte" class="datatypeLabel"><br>Petabyte<br><br></label>
+                    <label for="petabyte" id="conversion-petabyte"><br></label>
+                </button>
+
+                <button class="btn" id="exabyte" onclick="changeColor(this.id)">
+                    <label for="exabyte" id="type-exabyte" class="datatypeLabel"><br>Exabyte<br><br></label>
+                    <label for="exabyte" id="conversion-exabyte"><br></label>
+                </button>
+                <button class="btn" id="zettabyte" onclick="changeColor(this.id)">
+                    <label for="zettabyte" id="type-zettabyte" class="datatypeLabel"><br>Zettabyte<br><br></label>
+                    <label for="zettabyte" id="conversion-zettabyte"><br></label>
+                </button>
+                <button class="btn" id="yottabyte" onclick="changeColor(this.id)">
+                    <label for="yottabyte" id="type-yottabyte" class="datatypeLabel"><br>Yottabyte<br><br></label>
+                    <label for="yottabyte" id="conversion-yottabyte"><br></label>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="converter_conversions.js"></script>
+    <script src="converter.js"></script>
+
+    <!-- Bootstrap core JavaScript -->
+    <!-- JS, Popper.js, and jQuery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous">
+    </script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+        integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous">
+    </script>
+    </body>
+
+</html>

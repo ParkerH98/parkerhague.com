@@ -78,7 +78,6 @@
     <Content Include="Content\Bootstrap\bootstrap.css" />
     <Content Include="Content\Bootstrap\bootstrap.min.css" />
     <Content Include="Content\CSS\converter_styles.css" />
-    <Content Include="Content\CSS\converter_stylestest.css" />
     <Content Include="Content\CSS\resume_styles.css" />
     <Content Include="Content\CSS\resume_styles.min.css" />
     <Content Include="Content\CSS\colors.txt" />
@@ -200,7 +199,6 @@
     <Content Include="Content\Scripts\umd\popper.js" />
     <Content Include="Content\Scripts\umd\popper.min.js" />
     <Content Include="DataConverter\converter.aspx" />
-    <Content Include="DataConverter\converter_test.aspx" />
     <Content Include="resume.aspx" />
     <Content Include="resume.min.aspx" />
     <Content Include="Web.config" />
@@ -213,13 +211,6 @@
     </Compile>
     <Compile Include="DataConverter\converter.aspx.designer.cs">
       <DependentUpon>converter.aspx</DependentUpon>
-    </Compile>
-    <Compile Include="DataConverter\converter_test.aspx.cs">
-      <DependentUpon>converter_test.aspx</DependentUpon>
-      <SubType>ASPXCodeBehind</SubType>
-    </Compile>
-    <Compile Include="DataConverter\converter_test.aspx.designer.cs">
-      <DependentUpon>converter_test.aspx</DependentUpon>
     </Compile>
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="resume.aspx.cs">

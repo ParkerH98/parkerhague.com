@@ -7,6 +7,20 @@
 
     <title>Data Converter</title>
 
+    <!-- Required meta tags -->
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+    <meta http-equiv="content-script-type" content="text/javascript" />
+    <meta http-equiv="content-style-type" content="text/css" />
+    <meta http-equiv="content-language" content="nl" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="author" content="Parker Hague" />
+    <meta name="description"
+        content="Data converter able to convert multiple data types at once. Created by Parker Hague" />
+    <meta name="keywords"
+        content="Parker Hague, Data Converter, software developer, OSU, data type, Oklahoma State, Data Converter, Data Conversion, ParkerH98, Algorithms, JavaScript, Oklahoma State University, bit, megabyte, terrabyte, gigabyte" />
+    <meta name="robots" content="index, follow" />
+    <meta name="revisit-after" content="7 days" />
+
     <%-- Bootstrap --%>
     <script src="../Content/Scripts/jquery-3.5.1.min.js"></script>
     <script src="../Content/Scripts/bootstrap.min.js"></script>
@@ -17,14 +31,23 @@
     <%-- main stylesheet --%>
     <link href="../../Content/CSS/converter_styles.css" rel="stylesheet" />
 
-
     <%-- Google Fonts --%>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet" />
 
-
+    <!-- Favicons -->
+    <link rel="apple-touch-icon" sizes="180x180" href="../Content/Images/Favicon/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="../Content/Images/Favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="../Content/Images/Favicon/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="mask-icon" href="/safari-pinned-tab.svg" color="#5bbad5">
+    <meta name="msapplication-TileColor" content="#da532c">
+    <meta name="theme-color" content="#ffffff">
 </head>
 <body>
     <form id="form1" runat="server">
+
+        <%-- overall page container --%>
+        <div class="container-fluid p-0">
 
             <%-- nav container --%>
             <div id="naver" class="container-fluid p-0">
@@ -46,7 +69,8 @@
                                     Projects
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="converter.aspx">Data Converter</a></li>
+                                    <li><a class="dropdown-item" href="DataConverter/converter.aspx">Data Converter</a>
+                                    </li>
                                     <li><a class="dropdown-item" href="#">IOS App</a></li>
                                     <li>
                                         <hr class="dropdown-divider" />
@@ -55,97 +79,145 @@
                                 </ul>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#skills">Skills</a>
+                                <a class="nav-link" href="resume.aspx/#skills">Skills</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#experiences">Experience</a>
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link" href="#contact">Contact</a>
+                                <a class="nav-link" href="../resume.aspx">Contact</a>
                             </li>
                         </ul>
                     </div>
                 </nav>
             </div>
 
-        <div class="containerr">
+            <%-- input label --%>
+            <div class="row input-label">
 
-            <div class="btnContainer">
+                <div class="col-sm-4 offset-sm-4">
+                    <asp:Label CssClass="col-form-label font-weight-bold" ID="lblinput" runat="server"
+                        Text="Enter a Number to Convert"></asp:Label>
+                </div>
+            </div>
 
-                <div class="inputContainer">
+            <%-- text input row --%>
+            <div class="row input-margin">
 
-                    <br><br>
-                    <label for="input" style="display: block" class="inputLabel">Type Here to Convert</label><br>
-                    <input type="text" , id="input" , name="input" placeholder="Enter a number value">
+                <div class="col-sm-4 offset-sm-4">
+                    <asp:TextBox CssClass="form-control" ID="conversionInput" runat="server"></asp:TextBox>
+                </div>
+            </div>
 
+            <%-- container for all buttons --%>
+            <div class="container container-padding mx-auto">
+
+                <%-- first conversion row --%>
+                <div class="row">
+
+
+
+                   <%-- --%>
+
+
+                    <%-- Bit conversion --%>
+                    <div class="col-sm-3 text-center btn" id="Bit" >
+                        <asp:Label CssClass="d-block font-weight-bold type-label" ID="typeBit" runat="server" Text="Bit">
+                        </asp:Label>
+                        <asp:Label CssClass="d-block height wrap" ID="conversionBit" runat="server"></asp:Label>
+                    </div>
+
+                    <%-- Nibble conversion --%>
+                    <div class="col-sm-3 text-center btn" id="Nibble" >
+                        <asp:Label CssClass="d-block font-weight-bold type-label" ID="typeNibble" runat="server" Text="Nibble">
+                        </asp:Label>
+                        <asp:Label CssClass="d-block height wrap" ID="conversionNibble" runat="server"></asp:Label>
+                    </div>
+
+                    <%-- Byte conversion --%>
+                    <div class="col-sm-3 text-center btn" id="Byte" >
+                        <asp:Label CssClass="d-block font-weight-bold type-label" ID="typeByte" runat="server" Text="Byte">
+                        </asp:Label>
+                        <asp:Label CssClass="d-block height wrap" ID="conversionByte" runat="server"></asp:Label>
+                    </div>
+
+                    <%-- Word conversion --%>
+                    <div class="col-sm-3 text-center btn" id="Word" >
+                        <asp:Label CssClass="d-block font-weight-bold type-label" ID="typeWord" runat="server" Text="Word">
+                        </asp:Label>
+                        <asp:Label CssClass="d-block height wrap" ID="conversionWord" runat="server"></asp:Label>
+                    </div>
                 </div>
 
-                <div class="convertButtons">
+                <%-- second conversion row --%>
+                <div class="row">
 
-                    <button class="btn" id="bit" onclick="changeColor(this.id)">
-                        <label for="bit" id="type-bit" class="datatypeLabel"><br>Bit<br><br></label>
-                        <label for="bit" id="conversion-bit"><br></label>
-                    </button>
+                    <%-- Kilobyte conversion --%>
+                    <div class="col-sm-3 text-center btn" id="Kilobyte" >
+                        <asp:Label CssClass="d-block font-weight-bold type-label" ID="typeKilobyte" runat="server" Text="Kilobyte">
+                        </asp:Label>
+                        <asp:Label CssClass="d-block height wrap" ID="conversionKilobyte" runat="server"></asp:Label>
+                    </div>
 
-                    <button class="btn" id="nibble" onclick="changeColor(this.id)">
-                        <label for="nibble" id="type-nibble" class="datatypeLabel"><br>Nibble<br><br></label>
-                        <label for="nibble" id="conversion-nibble"><br></label>
-                    </button>
+                    <%-- Megabyte conversion --%>
+                    <div class="col-sm-3 text-center btn" id="Megabyte" >
+                        <asp:Label CssClass="d-block font-weight-bold type-label" ID="typeMegabyte" runat="server" Text="Megabyte">
+                        </asp:Label>
+                        <asp:Label CssClass="d-block height wrap" ID="conversionMegabyte" runat="server"></asp:Label>
+                    </div>
 
-                    <button class="btn" id="byte" onclick="changeColor(this.id)">
-                        <label for="byte" id="type-byte" class="datatypeLabel"><br>Byte<br><br></label>
-                        <label for="byte" id="conversion-byte"><br></label>
-                    </button>
+                    <%-- Gigabyte conversion --%>
+                    <div class="col-sm-3 text-center btn" id="Gigabyte" >
+                        <asp:Label CssClass="d-block font-weight-bold type-label" ID="typeGigabyte" runat="server" Text="Gigabyte">
+                        </asp:Label>
+                        <asp:Label CssClass="d-block height wrap" ID="conversionGigabyte" runat="server"></asp:Label>
+                    </div>
 
-                    <button class="btn" id="word" onclick="changeColor(this.id)">
-                        <label for="word" id="type-word" class="datatypeLabel"><br>Word<br><br></label>
-                        <label for="word" id="conversion-word"><br></label>
-                    </button>
+                    <%-- Terrabyte conversion --%>
+                    <div class="col-sm-3 text-center btn" id="Terrabyte" >
+                        <asp:Label CssClass="d-block font-weight-bold type-label" ID="typeTerrabyte" runat="server"
+                            Text="Terrabyte"></asp:Label>
+                        <asp:Label CssClass="d-block height wrap" ID="conversionTerrabyte" runat="server"></asp:Label>
+                    </div>
+                </div>
 
-                    <button class="btn" id="kilobyte" onclick="changeColor(this.id)">
-                        <label for="kilobyte" id="type-kilobyte" class="datatypeLabel"><br>Kilobyte<br><br></label>
-                        <label for="kilobyte" id="conversion-kilobyte"><br></label>
-                    </button>
+                <%-- third conversion row --%>
+                <div class="row">
 
-                    <button class="btn" id="megabyte" onclick="changeColor(this.id)">
-                        <label for="megabyte" id="type-megabyte" class="datatypeLabel"><br>Megabyte<br><br></label>
-                        <label for="megabyte" id="conversion-megabyte"><br></label>
-                    </button>
+                    <%-- Petabyte conversion --%>
+                    <div class="col-sm-3 text-center btn" id="Petabyte" >
+                        <asp:Label CssClass="d-block font-weight-bold type-label" ID="typePetabyte" runat="server" Text="Petabyte">
+                        </asp:Label>
+                        <asp:Label CssClass="d-block height wrap" ID="conversionPetabyte" runat="server"></asp:Label>
+                    </div>
 
-                    <button class="btn" id="gigabyte" onclick="changeColor(this.id)">
-                        <label for="gigabyte" id="type-gigabyte" class="datatypeLabel"><br>Gigabyte<br><br></label>
-                        <label for="gigabyte" id="conversion-gigabyte"><br></label>
-                    </button>
-                    <button class="btn" id="terrabyte" onclick="changeColor(this.id)">
-                        <label for="terrabyte" id="type-terrabyte" class="datatypeLabel"><br>Terrabyte<br><br></label>
-                        <label for="terrabyte" id="conversion-terrabyte"><br></label>
-                    </button>
-                    <button class="btn" id="petabyte" onclick="changeColor(this.id)">
-                        <label for="petabyte" id="type-petabyte" class="datatypeLabel"><br>Petabyte<br><br></label>
-                        <label for="petabyte" id="conversion-petabyte"><br></label>
-                    </button>
+                    <%-- Exabyte conversion --%>
+                    <div class="col-sm-3 text-center btn" id="Exabyte" >
+                        <asp:Label CssClass="d-block font-weight-bold type-label" ID="typeExabyte" runat="server" Text="Exabyte">
+                        </asp:Label>
+                        <asp:Label CssClass="d-block height wrap" ID="conversionExabyte" runat="server"></asp:Label>
+                    </div>
 
-                    <button class="btn" id="exabyte" onclick="changeColor(this.id)">
-                        <label for="exabyte" id="type-exabyte" class="datatypeLabel"><br>Exabyte<br><br></label>
-                        <label for="exabyte" id="conversion-exabyte"><br></label>
-                    </button>
-                    <button class="btn" id="zettabyte" onclick="changeColor(this.id)">
-                        <label for="zettabyte" id="type-zettabyte" class="datatypeLabel"><br>Zettabyte<br><br></label>
-                        <label for="zettabyte" id="conversion-zettabyte"><br></label>
-                    </button>
-                    <button class="btn" id="yottabyte" onclick="changeColor(this.id)">
-                        <label for="yottabyte" id="type-yottabyte" class="datatypeLabel"><br>Yottabyte<br><br></label>
-                        <label for="yottabyte" id="conversion-yottabyte"><br></label>
-                    </button>
+                    <%-- Zettabyte conversion --%>
+                    <div class="col-sm-3 text-center btn" id="Zettabyte" >
+                        <asp:Label CssClass="d-block font-weight-bold type-label" ID="typeZettabyte" runat="server"
+                            Text="Zettabyte"></asp:Label>
+                        <asp:Label CssClass="d-block height wrap" ID="conversionZettabyte" runat="server"></asp:Label>
+                    </div>
+
+                    <%-- Yottabyte conversion --%>
+                    <div class="col-sm-3 text-center btn" id="Yottabyte" >
+                        <asp:Label CssClass="d-block font-weight-bold type-label" ID="typeYottabyte" runat="server"
+                            Text="Yottabyte"></asp:Label>
+                        <asp:Label CssClass="d-block height wrap" ID="conversionYottabyte" runat="server"></asp:Label>
+                    </div>
                 </div>
             </div>
         </div>
 
         <script src="../Content/Scripts/converter.js"></script>
-        <script src="../Content/Scripts/converter_conversions.js"></script>
-
-
+        <%--<script src="../Content/Scripts/converter_conversions.js"></script>--%>
     </form>
 </body>
 </html>

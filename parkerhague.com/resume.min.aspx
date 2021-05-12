@@ -133,7 +133,7 @@ class="glyphicon glyphicon-star filled"></span> <span
 class="glyphicon glyphicon-star filled"></span> <span 
 class="glyphicon glyphicon-star filled"></span> <span 
 class="glyphicon glyphicon-star filled"></span> </span> </li> <li> <span 
-class="skills-title">Test</span> <span class="skills-score"> <span 
+class="skills-title">C#</span> <span class="skills-score"> <span 
 class="glyphicon glyphicon-star filled"></span> <span 
 class="glyphicon glyphicon-star filled"></span> <span 
 class="glyphicon glyphicon-star filled"></span> <span 

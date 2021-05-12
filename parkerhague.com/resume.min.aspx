@@ -133,7 +133,7 @@ class="glyphicon glyphicon-star filled"></span> <span
 class="glyphicon glyphicon-star filled"></span> <span 
 class="glyphicon glyphicon-star filled"></span> <span 
 class="glyphicon glyphicon-star filled"></span> </span> </li> <li> <span 
-class="skills-title">C#</span> <span class="skills-score"> <span 
+class="skills-title">Test</span> <span class="skills-score"> <span 
 class="glyphicon glyphicon-star filled"></span> <span 
 class="glyphicon glyphicon-star filled"></span> <span 
 class="glyphicon glyphicon-star filled"></span> <span 
@@ -166,10 +166,15 @@ class="skills-score"> <span class="glyphicon glyphicon-star filled"></span>
 <span class="glyphicon glyphicon-star filled"></span> <span 
 class="glyphicon glyphicon-star filled"></span> <span 
 class="glyphicon glyphicon-star"></span> <span class="glyphicon glyphicon-star">
+</span> </span> </li> <li> <span class="skills-title">C</span> <span 
+class="skills-score"> <span class="glyphicon glyphicon-star filled"></span> 
+<span class="glyphicon glyphicon-star filled"></span> <span 
+class="glyphicon glyphicon-star filled"></span> <span 
+class="glyphicon glyphicon-star"></span> <span class="glyphicon glyphicon-star">
 </span> </span> </li> </ul> </div> 
 <!-- ENDING OF LEFT COLUMN FOR PROGRAMMING LANGUAGES --> 
 <!-- BEGINNING OF RIGHT COLUMN FOR PROGRAMMING LANGUAGES --> <div 
-class="col-md-6"> <ul class="no-bullets"> <li> <span class="skills-title">MIPS
+class="col-md-6"> <ul class="no-bullets"> <li> <span class="skills-title">Python
 </span> <span class="skills-score"> <span 
 class="glyphicon glyphicon-star filled"></span> <span 
 class="glyphicon glyphicon-star filled"></span> <span 
@@ -180,7 +185,7 @@ class="skills-score"> <span class="glyphicon glyphicon-star filled"></span>
 <span class="glyphicon glyphicon-star filled"></span> <span 
 class="glyphicon glyphicon-star"></span> <span class="glyphicon glyphicon-star">
 </span> <span class="glyphicon glyphicon-star"></span> </span> </li> <li> <span 
-class="skills-title">Python</span> <span class="skills-score"> <span 
+class="skills-title">MIPS</span> <span class="skills-score"> <span 
 class="glyphicon glyphicon-star filled"></span> <span 
 class="glyphicon glyphicon-star filled"></span> <span 
 class="glyphicon glyphicon-star"></span> <span class="glyphicon glyphicon-star">

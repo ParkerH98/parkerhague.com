@@ -56,7 +56,7 @@
     <link href="Content/Bootstrap/bootstrap.min.css" rel="stylesheet" />
 
     <!-- Main Stylesheet -->
-    <link href="parkerhague.com/Content/CSS/resume_styles.min.css" rel="stylesheet" />
+    <link href="Content/CSS/resume_styles.min.css" rel="stylesheet" />
 
     <title>Parker Hague - Web Resume</title>
 

@@ -53,7 +53,7 @@
             <div id="naver" class="container-fluid p-0">
 
                 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                    <a class="navbar-brand" href="../resume.aspx">Parker Hague's Resume</a>
+                    <a class="navbar-brand" href="https://www.parkerhague.com">Parker Hague's Resume</a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse"
                         data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
                         aria-label="Toggle navigation">
@@ -64,12 +64,12 @@
                         <ul class="navbar-nav ml-auto">
 
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#projects" id="navbarDropdown" role="button"
+                                <a class="nav-link dropdown-toggle" href="https://www.parkerhague.com/#projects" id="navbarDropdown" role="button"
                                     data-bs-toggle="dropdown" aria-expanded="false">
                                     Projects
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="DataConverter/converter.aspx">Data Converter</a>
+                                    <li><a class="dropdown-item" href="https://parkerhague.com/DataConverter/">Data Converter</a>
                                     </li>
                                     <li><a class="dropdown-item" href="#">IOS App</a></li>
                                     <li>
@@ -86,7 +86,7 @@
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link" href="../resume.aspx">Contact</a>
+                                <a class="nav-link" href="https://parkerhague.com/#contact">Contact</a>
                             </li>
                         </ul>
                     </div>

@@ -176,7 +176,7 @@
                                     Projects
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="DataConverter/converter.aspx">Data Converter</a>
+                                    <li><a class="dropdown-item" href="https://parkerhague.com/DataConverter/">Data Converter</a>
                                     </li>
                                     <li><a class="dropdown-item" href="#">IOS App</a></li>
                                     <li>

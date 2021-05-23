@@ -1,4 +1,4 @@
-﻿ahtml,
+﻿html,
 body {
     color: #434242;
     height: 100%;
@@ -157,6 +157,10 @@ ul li ul:focus {
 at the top of the page (position:fixed and top:0) */
 .nav-wrapper {
     height: 60px;
+}
+
+#naver .navbar-nav{
+    margin-left: auto;
 }
 
 /* NAVBAR SECTION */

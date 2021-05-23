@@ -50,13 +50,18 @@
     <meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
     <meta name="theme-color" content="#ffffff">
 
+
+    <!-- Bootstrap CSS -->
+    <!-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous"> -->
+
     <!-- Bootstrap CSS -->
     <script src="Content/Scripts/jquery-3.5.1.min.js"></script>
     <script src="Content/Scripts/bootstrap.min.js"></script>
     <link href="Content/Bootstrap/bootstrap.min.css" rel="stylesheet" />
 
     <!-- Main Stylesheet -->
-    <link href="Content/CSS/resume_styles.min.css" rel="stylesheet" />
+    <link href="parkerhague.com/Content/CSS/resume_styles.css" rel="stylesheet" />
 
     <title>Parker Hague - Web Resume</title>
 
@@ -176,7 +181,8 @@
                                     Projects
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="https://parkerhague.com/DataConverter/">Data Converter</a>
+                                    <li><a class="dropdown-item" href="https://parkerhague.com/DataConverter/">Data
+                                            Converter</a>
                                     </li>
                                     <li><a class="dropdown-item" href="#">IOS App</a></li>
                                     <li>
@@ -213,49 +219,354 @@
 
             <hr />
 
-            <div class="row">
-
-                <div class="col-md-6 col-sm-12 col-xs-12">
-                    <figure class="effect">
-
-                        <img src="Content/Images/converter_image.png" alt="Data Converter" />
-
-                        <figcaption>
-                            <h3>Data Converter</h3>
-                            <p>A program that can convert multiple data sizes at once.</p>
-                            <p><strong>Tags:</strong> <br />JavaScript, GUI, Web Development</p>
-                            <a href="https://parkerhague.com/DataConverter/" target="_blank">View more</a>
-                            <span class="icon">
-                                <span class="glyphicon glyphicon-new-window"></span>
-                            </span>
-                        </figcaption>
-                    </figure>
+            <!-- Minesweeper -->
+            <div class="row my-4">
+                <!-- Carousel -->
+                <div class="col-lg-4 mx-auto my-auto">
+                    <div id="mineCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#mineCarousel" data-bs-slide-to="0" class="active"
+                                aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#mineCarousel" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                            <button type="button" data-bs-target="#mineCarousel" data-bs-slide-to="2"
+                                aria-label="Slide 3"></button>
+                            <button type="button" data-bs-target="#mineCarousel" data-bs-slide-to="3"
+                                aria-label="Slide 4"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="Content/Images/mine1.png" class="d-block w-100 mx-auto" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="Content/Images/mine2.png" class="d-block w-100 mx-auto" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="Content/Images/mine3.png" class="d-block w-100 mx-auto" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="Content/Images/mine4.png" class="d-block w-100 mx-auto" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#mineCarousel"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#mineCarousel"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
                 </div>
 
+                <!-- Headings & Description -->
+                <div class="col-sm-6">
+                    <h3 class="mb-0">Minesweeper</h3>
+                    <label class="text-muted font-weight-light mt-0">
+                        <small>CS2133 - Computer Science II</small>
+                    </label>
 
-                <div class="col-md-6 col-sm-12 col-xs-12">
+                    <h4 class="mb-0 mt-5">Description:</h4>
+                    <p>I recreated the game Minesweeper in Java.</p>
 
-                    <figure class="effect">
+                    <h4 class="mb-0">What I learned:</h4>
+                    <p>This project drastically improved my understanding and skills in object oriented programming. I
+                        also
+                        learned MVC architecture and why it's necessary for a project like this one.</p>
 
-                        <img src="Content/Images/github_repo.png" alt="GitHub" />
+                    <h4 class="mb-0">Keywords:</h4>
+                    <p>Java, OOP, MVC, GUI, Java Swing, Java AWT</p>
 
-                        <figcaption>
-                            <h3>GitHub</h3>
-                            <p>Numerous mini coding projects in an assortment of languages including
-                                python, swift, and C# to name a few.
-                            </p>
-                            <p><strong>Tags:</strong> <br />IOS App, Web Bot Script, Data Conversion Web App,
-                                Minesweeper
-                            </p>
-                            <a href="https://github.com/ParkerH98" target="_blank">View more</a>
-                            <span class="icon">
-                                <span class="glyphicon glyphicon-new-window"></span>
-                            </span>
-                        </figcaption>
-                    </figure>
+                    <a target="_blank"
+                        href="https://github.com/ParkerH98/OklahomaStateUniversity/tree/master/CS2133_ComputerScienceII/assignment_5_Parker_Hague"
+                        class="text-dark glyphicon glyphicon-link" role="button" aria-pressed="true">
+                    </a>
+                    Source code
                 </div>
             </div>
+
+            <hr>
+
+            <!-- Data Converter -->
+            <div class="row my-4">
+                <!-- Carousel -->
+                <div class="col-sm-6 mx-auto my-auto">
+                    <div id="dataCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#dataCarousel" data-bs-slide-to="0" class="active"
+                                aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#dataCarousel" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="Content/Images/data1.png" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="Content/Images/data2.png" class="d-block w-100" alt="...">
+                            </div>
+
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#dataCarousel"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#dataCarousel"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Headings & Description -->
+                <div class="col-sm-6">
+                    <h3 class="mb-0">Data Converter</h3>
+                    <label class="text-muted font-weight-light mt-0">
+                        <small>Personal Project</small>
+                    </label>
+
+                    <h4 class="mb-0 mt-5">Description:</h4>
+                    <p>When I was taking Computer Systems in Spring 2019, I was constantly using online calculators. I
+                        quickly noticed how all of them weren't user friendly and their UI was clunky. So I sought to
+                        make my own.</p>
+
+                    <h4 class="mb-0">What I learned:</h4>
+                    <p>I had never used JavaScript before this project. I learned how JavaScript plays a huge role in
+                        web development. </p>
+
+                    <h4 class="mb-0">Keywords:</h4>
+                    <p>JavaScript, HTML, CSS, Bootstrap, JQuery</p>
+
+                    <a target="_blank" href="https://parkerhague.com/DataConverter"
+                        class="text-dark glyphicon glyphicon-link" role="button" aria-pressed="true">
+                    </a>
+                    Website
+                </div>
+            </div>
+
+
+            <hr>
+
+            <!-- Higher Lower -->
+            <div class="row my-4">
+                <!-- Carousel -->
+                <div class="col-sm-4 mx-auto my-auto">
+                    <div id="appCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#appCarousel" data-bs-slide-to="0" class="active"
+                                aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#appCarousel" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="Content/Images/app1.jpeg" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="Content/Images/app2.jpeg" class="d-block w-100" alt="...">
+                            </div>
+
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#appCarousel"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#appCarousel"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Headings & Description -->
+                <div class="col-sm-6">
+                    <h3 class="mb-0">Higher Lower</h3>
+                    <label class="text-muted font-weight-light mt-0">
+                        <small>Personal Project</small>
+                    </label>
+
+                    <h4 class="mb-0 mt-5">Description:</h4>
+                    <p>A fun iPhone app meant to be played with friends. My app was on the Apple app store for about a
+                        year, but my developer account expired and I haven't paid to renew it.</p>
+
+                    <h4 class="mb-0">What I learned:</h4>
+                    <p>This app taught me some Swift basics and how to make an app with Xcode.</p>
+
+                    <h4 class="mb-0">Keywords:</h4>
+                    <p>Swift, Xcode, IOS</p>
+
+                    <a target="_blank" href="https://github.com/ParkerH98/LowerHigher"
+                        class="text-dark glyphicon glyphicon-link" role="button" aria-pressed="true">
+                    </a>
+                    Source code
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- Multiple Multithreaded Servers -->
+            <div class="row my-4 ">
+                <!-- Carousel -->
+                <div class="col-sm-6 mx-auto my-auto">
+                    <div id="serverCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#serverCarousel" data-bs-slide-to="0" class="active"
+                                aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#serverCarousel" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="Content/Images/server1.png" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="Content/Images/server2.png" class="d-block w-100" alt="...">
+                            </div>
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#serverCarousel"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#serverCarousel"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Headings & Description -->
+                <div class="col-sm-6">
+                    <h3 class="mb-0">Multiple Multithreaded Servers</h3>
+                    <label class="text-muted font-weight-light mt-0">
+                        <small>CS4323 - Operating Systems Design & Implementation</small>
+                    </label>
+
+                    <h4 class="mb-0 mt-5">Description:</h4>
+                    <p>This was a class project that was a multi server/multithreaded ticket scheduling system. On this
+                        project I handled the server and the forks creating multiple servers. I managed the socket
+                        connection between the client/server. I was also in charge of creating the thread pool that each
+                        server uses. I did the starvation avoidance and thread priority algorithm. Lastly, I handled the
+                        synchronization amongst the threads and processes.</p>
+
+                    <h4 class="mb-0">What I learned:</h4>
+                    <p>I learned tons in this project. I learned how to use semaphores & mutex locks, how to create and
+                        use a thread pool, and how to make a server multithreaded.</p>
+
+                    <h4 class="mb-0">Keywords:</h4>
+                    <p>C, Client/Server, Socket, Semaphore, Thread Pool, Multithreaded, Multiprocess, Priority Scheduler
+                    </p>
+
+                    <a target="_blank" href="https://github.com/ParkerH98/OS-Group_F"
+                        class="text-dark glyphicon glyphicon-link" role="button" aria-pressed="true">
+                    </a>
+                    Source code
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- Job Scheduling Priority Queue -->
+            <div class="row my-4">
+                <!-- Carousel -->
+                <div class="col-sm-4 mx-auto my-auto">
+                    <div id="jobCarousel" class="carousel slide" data-bs-ride="carousel">
+                        <div class="carousel-indicators">
+                            <button type="button" data-bs-target="#jobCarousel" data-bs-slide-to="0" class="active"
+                                aria-current="true" aria-label="Slide 1"></button>
+                            <button type="button" data-bs-target="#jobCarousel" data-bs-slide-to="1"
+                                aria-label="Slide 2"></button>
+                        </div>
+                        <div class="carousel-inner">
+                            <div class="carousel-item active">
+                                <img src="Content/Images/job1.png" class="d-block w-100" alt="...">
+                            </div>
+                            <div class="carousel-item">
+                                <img src="Content/Images/job2.png" class="d-block w-100" alt="...">
+                            </div>
+
+                        </div>
+                        <button class="carousel-control-prev" type="button" data-bs-target="#jobCarousel"
+                            data-bs-slide="prev">
+                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Previous</span>
+                        </button>
+                        <button class="carousel-control-next" type="button" data-bs-target="#jobCarousel"
+                            data-bs-slide="next">
+                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                            <span class="visually-hidden">Next</span>
+                        </button>
+                    </div>
+                </div>
+
+                <!-- Headings & Description -->
+                <div class="col-sm-6">
+                    <h3 class="mb-0">Job Scheduling Priority Queue</h3>
+                    <label class="text-muted font-weight-light">
+                        <small>CS3353 - Data Structures & Algorithm Analysis</small>
+                    </label>
+
+                    <h4 class="mb-0 mt-5">Description:</h4>
+                    <p>This is a program that takes in a file input of jobs with a name, priority, arrival time, and
+                        length. The program uses a max heap with a queue to form a priority queue data structure. The
+                        purpose of this priority queue is to always service a job that has arrived and also has the
+                        highest priority.</p>
+
+                    <h4 class="mb-0">What I learned:</h4>
+                    <p>I learned several concepts about the queue and heap data structures such as how they work and how
+                        to implement them. This program also improved my OOP skills as I has to make my own Job object
+                        to do what I needed.</p>
+
+                    <h4 class="mb-0">Keywords:</h4>
+                    <p>Java, Priority Queue, Max Heap, OOP</p>
+
+                    <a target="_blank"
+                        href="https://github.com/ParkerH98/OklahomaStateUniversity/tree/master/CS3353_DataStructures/pgm2"
+                        class="text-dark glyphicon glyphicon-link" role="button" aria-pressed="true">
+                    </a>
+                    Source code
+                </div>
+            </div>
+
+            <hr>
+
+            <!-- GitHub -->
+            <div class="row my-5">
+                <div class="col-sm-6 mx-0 my-auto">
+                    <img src="parkerhague.com/Content/Images/github_repo.png" class="d-block img-fluid mx-auto"
+                        alt="...">
+                </div>
+
+                <!-- Headings & Description -->
+                <div class="col-sm-6">
+                    <h3 class="mb-0">GitHub</h3>
+                    <label class="text-muted font-weight-light mt-0">
+                        <small>Personal & Academic Projects</small>
+                    </label>
+
+                    <h4 class="mb-0 mt-5">Description:</h4>
+                    <p>Check out my GitHub for all of my code during my studies at Oklahoma State as well as several
+                        programming projects.</p>
+
+                    <h4 class="mb-0">Keywords:</h4>
+                    <p>Java, C#, C, JavaScript, HTML, CSS, Python, Matlab, SQL</p>
+
+                    <a target="_blank" href="https://github.com/ParkerH98" class="text-dark glyphicon glyphicon-link"
+                        role="button" aria-pressed="true">
+                    </a>
+                    Website
+                </div>
+            </div>
+
         </div>
+        <!-- END OF PROJECTS DIV -->
 
         <div class="background-white">
             <div id="skills" class="container">
@@ -450,16 +761,12 @@
 
                 </div>
 
-
-
                 <div class="mt-5">
                     <label class="text-muted font-weight-light">
                         <small>*filled stars indicate experience and/or proficiency</small>
                     </label>
                     <hr class="mt-0" />
                 </div>
-
-
 
                 <h3>Tools and Technologies</h3>
 
@@ -996,6 +1303,12 @@
         <!-- script for sticky navbar -->
         <script src="Content/Scripts/stickyNavbar.js"></script>
     </form>
+
+
+    <!-- Option 1: Bootstrap Bundle with Popper -->
+    <!-- <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-p34f1UUtsS3wqzfto5wAAmdvj+osOnFyQFpp4Ua3gs/ZVWx6oOypYoCJhGGScy+8" crossorigin="anonymous">
+    </script> -->
 </body>
 
 </html>

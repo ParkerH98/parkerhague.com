@@ -290,6 +290,11 @@ at the top of the page (position:fixed and top:0) */
 
 /* END RELEVANT COURSEWORK SECTION */
 
+.carousel img {
+    width: auto;
+    height: 50rem;
+    max-height: 50rem;
+}
 
 #projects .row>div {
     margin-bottom: 30px;

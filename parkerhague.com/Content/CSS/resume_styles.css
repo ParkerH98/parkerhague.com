@@ -96,7 +96,7 @@ hr {
 /* brings to top */
 #naver {
     background-color: #292b2c;
-    z-index: 1;
+    z-index: 5;
     padding: 0em;
 }
 

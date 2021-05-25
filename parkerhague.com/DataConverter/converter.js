@@ -1255,6 +1255,7 @@ $("#Bit").hover(function () {
     var userInput = document.getElementById("conversionInput").value;
     convertBit(userInput);
     changeColor(this.id);
+    console.log("OCCURED");
 });
 
 $("#Nibble").hover(function () {

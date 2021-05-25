@@ -1,4 +1,6 @@
-﻿html {
+﻿
+
+/* html {
     font-size: 62.5%;
     box-sizing: border-box;
     font-family: 'Open Sans', sans-serif !important;
@@ -41,6 +43,10 @@ input {
     height: 40px;
     border-radius: 5px;
     font-size: 25px;
+}
+
+#help{
+    color:red;
 }
 
 .convertButtons {
@@ -96,9 +102,9 @@ a {
 .datatypeLabel {
     font-weight: bold;
     font-size: 18px;
-}
+} */
 
-@media (max-device-width: 480px) {
+/* @media (max-device-width: 480px) {
 
     .containerr {
         max-height: 470px;
@@ -109,7 +115,7 @@ a {
         left: 2%;
     }
 
-    /* I did this to fix the problem of page content showing behind the nav bar */
+    I did this to fix the problem of page content showing behind the nav bar
     .nav-wrapper {
         z-index: 999;
         position: fixed;
@@ -167,4 +173,4 @@ a {
         height: 100%;
         overflow: hidden
     }
-}
+} */

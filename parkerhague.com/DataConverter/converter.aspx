@@ -65,6 +65,7 @@
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 
+
                         <ul class="navbar-nav ml-auto">
 
                             <li class="nav-item dropdown">
@@ -111,7 +112,8 @@
             <div class="row input-margin">
                 <div class="col-sm-4 ">
                     <div class="text-center">
-                        
+                        <p id="help" aria-hidden="true" type="button" data-toggle="collapse"
+                        data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Click here for help</p>
                     </div>
 
                     <div class="collapse" id="collapseExample">
@@ -125,9 +127,7 @@
                 </div>
 
                 <div class="col-sm-4">
-                    <i class="fa fa-info " aria-hidden="true" type="button" data-toggle="collapse"
-                        data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                    </i>
+                    
                     <asp:TextBox CssClass="form-control" ID="conversionInput" runat="server"></asp:TextBox>
                 </div>
             </div>
@@ -241,10 +241,8 @@
                 </div>
             </div>
         </div>
-
         <script src="converter.js"></script>
     </form>
-
 </body>
 
 </html>

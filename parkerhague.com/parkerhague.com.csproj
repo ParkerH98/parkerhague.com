@@ -114,8 +114,7 @@
     <Content Include="Content\Scripts\bootstrap.bundle.min.js" />
     <Content Include="Content\Scripts\bootstrap.js" />
     <Content Include="Content\Scripts\bootstrap.min.js" />
-    <Content Include="Content\Scripts\converter.js" />
-    <Content Include="Content\Scripts\converter_conversions.js" />
+    <Content Include="DataConverter\converter.js" />
     <Content Include="Content\Scripts\esm\popper-utils.js" />
     <Content Include="Content\Scripts\esm\popper-utils.min.js" />
     <Content Include="Content\Scripts\esm\popper.js" />

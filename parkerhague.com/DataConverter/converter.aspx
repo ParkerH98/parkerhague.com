@@ -3,7 +3,6 @@
 <!DOCTYPE html>
 
 <html xmlns="http://www.w3.org/1999/xhtml">
-
 <head runat="server">
 
     <title>Data Converter</title>
@@ -20,21 +19,19 @@
     <meta name="keywords"
         content="Parker Hague, Data Converter, software developer, OSU, data type, Oklahoma State, Data Converter, Data Conversion, ParkerH98, Algorithms, JavaScript, Oklahoma State University, bit, megabyte, terrabyte, gigabyte" />
     <meta name="robots" content="index, follow" />
-    <meta name="revisit-after" content="4 days" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="revisit-after" content="7 days" />
 
-    <!-- Bootstrap -->
+    <%-- Bootstrap --%>
     <script src="../Content/Scripts/jquery-3.5.1.min.js"></script>
     <script src="../Content/Scripts/bootstrap.min.js"></script>
     <link href="../Content/Bootstrap/bootstrap.min.css" rel="stylesheet" />
 
-    <!-- main stylesheet -->
-    <link href="../Content/CSS/converter_styles.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-    <!-- Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <%-- main stylesheet --%>
+    <link href="../../Content/CSS/converter_styles.css" rel="stylesheet" />
 
-    <!-- Google Fonts -->
+    <%-- Google Fonts --%>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet" />
 
     <!-- Favicons -->
@@ -46,18 +43,17 @@
     <meta name="msapplication-TileColor" content="#da532c">
     <meta name="theme-color" content="#ffffff">
 </head>
-
 <body>
     <form id="form1" runat="server">
 
-        <!-- overall page container -->
+        <%-- overall page container --%>
         <div class="container-fluid p-0">
 
-            <!-- nav container -->
+            <%-- nav container --%>
             <div id="naver" class="container-fluid p-0">
 
                 <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-                    <a class="navbar-brand" href="https://www.parkerhague.com">Parker Hague's Resume</a>
+                    <a class="navbar-brand" href="../resume.aspx">Parker Hague's Resume</a>
                     <button class="navbar-toggler" type="button" data-toggle="collapse"
                         data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
                         aria-label="Toggle navigation">
@@ -65,17 +61,15 @@
                     </button>
                     <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
 
-
                         <ul class="navbar-nav ml-auto">
 
                             <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="https://www.parkerhague.com/#projects"
-                                    id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                <a class="nav-link dropdown-toggle" href="#projects" id="navbarDropdown" role="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
                                     Projects
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
-                                    <li><a class="dropdown-item" href="https://parkerhague.com/DataConverter/">Data
-                                            Converter</a>
+                                    <li><a class="dropdown-item" href="DataConverter/converter.aspx">Data Converter</a>
                                     </li>
                                     <li><a class="dropdown-item" href="#">IOS App</a></li>
                                     <li>
@@ -92,14 +86,14 @@
                             </li>
 
                             <li class="nav-item">
-                                <a class="nav-link" href="https://parkerhague.com/#contact">Contact</a>
+                                <a class="nav-link" href="../resume.aspx">Contact</a>
                             </li>
                         </ul>
                     </div>
                 </nav>
             </div>
 
-            <!-- input label -->
+            <%-- input label --%>
             <div class="row input-label">
 
                 <div class="col-sm-4 offset-sm-4">
@@ -132,108 +126,104 @@
                 </div>
             </div>
 
-            <!-- container for all buttons -->
+            <%-- container for all buttons --%>
             <div class="container container-padding mx-auto">
 
-                <!-- first conversion row -->
+                <%-- first conversion row --%>
                 <div class="row">
 
-                    <!-- Bit conversion -->
-                    <div class="col-sm-3 text-center btn" id="Bit">
-                        <asp:Label CssClass="d-block font-weight-bold type-label" ID="typeBit" runat="server"
-                            Text="Bit">
+
+
+                   <%-- --%>
+
+
+                    <%-- Bit conversion --%>
+                    <div class="col-sm-3 text-center btn" id="Bit" >
+                        <asp:Label CssClass="d-block font-weight-bold type-label" ID="typeBit" runat="server" Text="Bit">
                         </asp:Label>
                         <asp:Label CssClass="d-block height wrap" ID="conversionBit" runat="server"></asp:Label>
                     </div>
 
-                    <!-- Nibble conversion -->
-                    <div class="col-sm-3 text-center btn" id="Nibble">
-                        <asp:Label CssClass="d-block font-weight-bold type-label" ID="typeNibble" runat="server"
-                            Text="Nibble">
+                    <%-- Nibble conversion --%>
+                    <div class="col-sm-3 text-center btn" id="Nibble" >
+                        <asp:Label CssClass="d-block font-weight-bold type-label" ID="typeNibble" runat="server" Text="Nibble">
                         </asp:Label>
                         <asp:Label CssClass="d-block height wrap" ID="conversionNibble" runat="server"></asp:Label>
                     </div>
 
-                    <!-- Byte conversion -->
-                    <div class="col-sm-3 text-center btn" id="Byte">
-                        <asp:Label CssClass="d-block font-weight-bold type-label" ID="typeByte" runat="server"
-                            Text="Byte">
+                    <%-- Byte conversion --%>
+                    <div class="col-sm-3 text-center btn" id="Byte" >
+                        <asp:Label CssClass="d-block font-weight-bold type-label" ID="typeByte" runat="server" Text="Byte">
                         </asp:Label>
                         <asp:Label CssClass="d-block height wrap" ID="conversionByte" runat="server"></asp:Label>
                     </div>
 
-                    <!-- Word conversion -->
-                    <div class="col-sm-3 text-center btn" id="Word">
-                        <asp:Label CssClass="d-block font-weight-bold type-label" ID="typeWord" runat="server"
-                            Text="Word">
+                    <%-- Word conversion --%>
+                    <div class="col-sm-3 text-center btn" id="Word" >
+                        <asp:Label CssClass="d-block font-weight-bold type-label" ID="typeWord" runat="server" Text="Word">
                         </asp:Label>
                         <asp:Label CssClass="d-block height wrap" ID="conversionWord" runat="server"></asp:Label>
                     </div>
                 </div>
 
-                <!-- second conversion row -->
+                <%-- second conversion row --%>
                 <div class="row">
 
-                    <!-- Kilobyte conversion -->
-                    <div class="col-sm-3 text-center btn" id="Kilobyte">
-                        <asp:Label CssClass="d-block font-weight-bold type-label" ID="typeKilobyte" runat="server"
-                            Text="Kilobyte">
+                    <%-- Kilobyte conversion --%>
+                    <div class="col-sm-3 text-center btn" id="Kilobyte" >
+                        <asp:Label CssClass="d-block font-weight-bold type-label" ID="typeKilobyte" runat="server" Text="Kilobyte">
                         </asp:Label>
                         <asp:Label CssClass="d-block height wrap" ID="conversionKilobyte" runat="server"></asp:Label>
                     </div>
 
-                    <!-- Megabyte conversion -->
-                    <div class="col-sm-3 text-center btn" id="Megabyte">
-                        <asp:Label CssClass="d-block font-weight-bold type-label" ID="typeMegabyte" runat="server"
-                            Text="Megabyte">
+                    <%-- Megabyte conversion --%>
+                    <div class="col-sm-3 text-center btn" id="Megabyte" >
+                        <asp:Label CssClass="d-block font-weight-bold type-label" ID="typeMegabyte" runat="server" Text="Megabyte">
                         </asp:Label>
                         <asp:Label CssClass="d-block height wrap" ID="conversionMegabyte" runat="server"></asp:Label>
                     </div>
 
-                    <!-- Gigabyte conversion -->
-                    <div class="col-sm-3 text-center btn" id="Gigabyte">
-                        <asp:Label CssClass="d-block font-weight-bold type-label" ID="typeGigabyte" runat="server"
-                            Text="Gigabyte">
+                    <%-- Gigabyte conversion --%>
+                    <div class="col-sm-3 text-center btn" id="Gigabyte" >
+                        <asp:Label CssClass="d-block font-weight-bold type-label" ID="typeGigabyte" runat="server" Text="Gigabyte">
                         </asp:Label>
                         <asp:Label CssClass="d-block height wrap" ID="conversionGigabyte" runat="server"></asp:Label>
                     </div>
 
-                    <!-- Terrabyte conversion -->
-                    <div class="col-sm-3 text-center btn" id="Terrabyte">
+                    <%-- Terrabyte conversion --%>
+                    <div class="col-sm-3 text-center btn" id="Terrabyte" >
                         <asp:Label CssClass="d-block font-weight-bold type-label" ID="typeTerrabyte" runat="server"
                             Text="Terrabyte"></asp:Label>
                         <asp:Label CssClass="d-block height wrap" ID="conversionTerrabyte" runat="server"></asp:Label>
                     </div>
                 </div>
 
-                <!-- third conversion row -->
+                <%-- third conversion row --%>
                 <div class="row">
 
-                    <!-- Petabyte conversion -->
-                    <div class="col-sm-3 text-center btn" id="Petabyte">
-                        <asp:Label CssClass="d-block font-weight-bold type-label" ID="typePetabyte" runat="server"
-                            Text="Petabyte">
+                    <%-- Petabyte conversion --%>
+                    <div class="col-sm-3 text-center btn" id="Petabyte" >
+                        <asp:Label CssClass="d-block font-weight-bold type-label" ID="typePetabyte" runat="server" Text="Petabyte">
                         </asp:Label>
                         <asp:Label CssClass="d-block height wrap" ID="conversionPetabyte" runat="server"></asp:Label>
                     </div>
 
-                    <!-- Exabyte conversion -->
-                    <div class="col-sm-3 text-center btn" id="Exabyte">
-                        <asp:Label CssClass="d-block font-weight-bold type-label" ID="typeExabyte" runat="server"
-                            Text="Exabyte">
+                    <%-- Exabyte conversion --%>
+                    <div class="col-sm-3 text-center btn" id="Exabyte" >
+                        <asp:Label CssClass="d-block font-weight-bold type-label" ID="typeExabyte" runat="server" Text="Exabyte">
                         </asp:Label>
                         <asp:Label CssClass="d-block height wrap" ID="conversionExabyte" runat="server"></asp:Label>
                     </div>
 
-                    <!-- Zettabyte conversion -->
-                    <div class="col-sm-3 text-center btn" id="Zettabyte">
+                    <%-- Zettabyte conversion --%>
+                    <div class="col-sm-3 text-center btn" id="Zettabyte" >
                         <asp:Label CssClass="d-block font-weight-bold type-label" ID="typeZettabyte" runat="server"
                             Text="Zettabyte"></asp:Label>
                         <asp:Label CssClass="d-block height wrap" ID="conversionZettabyte" runat="server"></asp:Label>
                     </div>
 
-                    <!-- Yottabyte conversion -->
-                    <div class="col-sm-3 text-center btn" id="Yottabyte">
+                    <%-- Yottabyte conversion --%>
+                    <div class="col-sm-3 text-center btn" id="Yottabyte" >
                         <asp:Label CssClass="d-block font-weight-bold type-label" ID="typeYottabyte" runat="server"
                             Text="Yottabyte"></asp:Label>
                         <asp:Label CssClass="d-block height wrap" ID="conversionYottabyte" runat="server"></asp:Label>
@@ -241,8 +231,9 @@
                 </div>
             </div>
         </div>
+
         <script src="converter.js"></script>
+        <%--<script src="../Content/Scripts/converter_conversions.js"></script>--%>
     </form>
 </body>
-
 </html>

@@ -1,6 +1,9 @@
-﻿let buttons = document.querySelectorAll(".btn")
+﻿
+let buttons = document.querySelectorAll(".btn")
 
 $(".btn").click(function () {
+
+    console.log("BIGT TEST");
 
     changeColor(this.id);
 });
@@ -1255,7 +1258,6 @@ $("#Bit").hover(function () {
     var userInput = document.getElementById("conversionInput").value;
     convertBit(userInput);
     changeColor(this.id);
-    console.log("OCCURED");
 });
 
 $("#Nibble").hover(function () {

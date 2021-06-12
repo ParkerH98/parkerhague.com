@@ -1,24 +1,14 @@
 ﻿
 let buttons = document.querySelectorAll(".btn")
 
-$(".btn").click(function () {
-
-    console.log("BIGT TEST");
+$(".convertBtn").click(function () {
 
     changeColor(this.id);
 });
 
-// adds click listener to each button
-//buttons.forEach(function (currentBtn) {
-
-//    currentBtn.addEventListener("click", function () {
-//        bclick(this.id)
-//    })
-//})
-
 function changeColor(id) {
 
-    let buttons = document.querySelectorAll(".btn")
+    let buttons = document.querySelectorAll(".convertBtn")
     buttons.forEach(function (currentBtn) {
 
         currentBtn.style.backgroundColor = "#ff7979";
@@ -26,7 +16,6 @@ function changeColor(id) {
 
     document.getElementById(id).style.backgroundColor = "#f9ca24";
 }
-
 
 
 // regex to format numbers by adding commas

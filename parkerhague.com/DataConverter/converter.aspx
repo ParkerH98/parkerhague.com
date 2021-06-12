@@ -106,8 +106,8 @@
             <div class="row input-margin">
                 <div class="col-sm-4 ">
                     <div class="text-center">
-                        <p id="help" aria-hidden="true" type="button" data-toggle="collapse"
-                        data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Click here for help</p>
+                        <button id="help" class="btn btn-secondary bg-dark" aria-hidden="true" type="button" data-toggle="collapse"
+                        data-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">Click here for help</button>
                     </div>
 
                     <div class="collapse" id="collapseExample">
@@ -132,34 +132,29 @@
                 <%-- first conversion row --%>
                 <div class="row">
 
-
-
-                   <%-- --%>
-
-
                     <%-- Bit conversion --%>
-                    <div class="col-sm-3 text-center btn" id="Bit" >
+                    <div class="col-sm-3 text-center btn convertBtn" id="Bit" >
                         <asp:Label CssClass="d-block font-weight-bold type-label" ID="typeBit" runat="server" Text="Bit">
                         </asp:Label>
                         <asp:Label CssClass="d-block height wrap" ID="conversionBit" runat="server"></asp:Label>
                     </div>
 
                     <%-- Nibble conversion --%>
-                    <div class="col-sm-3 text-center btn" id="Nibble" >
+                    <div class="col-sm-3 text-center btn convertBtn" id="Nibble" >
                         <asp:Label CssClass="d-block font-weight-bold type-label" ID="typeNibble" runat="server" Text="Nibble">
                         </asp:Label>
                         <asp:Label CssClass="d-block height wrap" ID="conversionNibble" runat="server"></asp:Label>
                     </div>
 
                     <%-- Byte conversion --%>
-                    <div class="col-sm-3 text-center btn" id="Byte" >
+                    <div class="col-sm-3 text-center btn convertBtn" id="Byte" >
                         <asp:Label CssClass="d-block font-weight-bold type-label" ID="typeByte" runat="server" Text="Byte">
                         </asp:Label>
                         <asp:Label CssClass="d-block height wrap" ID="conversionByte" runat="server"></asp:Label>
                     </div>
 
                     <%-- Word conversion --%>
-                    <div class="col-sm-3 text-center btn" id="Word" >
+                    <div class="col-sm-3 text-center btn convertBtn" id="Word" >
                         <asp:Label CssClass="d-block font-weight-bold type-label" ID="typeWord" runat="server" Text="Word">
                         </asp:Label>
                         <asp:Label CssClass="d-block height wrap" ID="conversionWord" runat="server"></asp:Label>
@@ -170,28 +165,28 @@
                 <div class="row">
 
                     <%-- Kilobyte conversion --%>
-                    <div class="col-sm-3 text-center btn" id="Kilobyte" >
+                    <div class="col-sm-3 text-center btn convertBtn" id="Kilobyte" >
                         <asp:Label CssClass="d-block font-weight-bold type-label" ID="typeKilobyte" runat="server" Text="Kilobyte">
                         </asp:Label>
                         <asp:Label CssClass="d-block height wrap" ID="conversionKilobyte" runat="server"></asp:Label>
                     </div>
 
                     <%-- Megabyte conversion --%>
-                    <div class="col-sm-3 text-center btn" id="Megabyte" >
+                    <div class="col-sm-3 text-center btn convertBtn" id="Megabyte" >
                         <asp:Label CssClass="d-block font-weight-bold type-label" ID="typeMegabyte" runat="server" Text="Megabyte">
                         </asp:Label>
                         <asp:Label CssClass="d-block height wrap" ID="conversionMegabyte" runat="server"></asp:Label>
                     </div>
 
                     <%-- Gigabyte conversion --%>
-                    <div class="col-sm-3 text-center btn" id="Gigabyte" >
+                    <div class="col-sm-3 text-center btn convertBtn" id="Gigabyte" >
                         <asp:Label CssClass="d-block font-weight-bold type-label" ID="typeGigabyte" runat="server" Text="Gigabyte">
                         </asp:Label>
                         <asp:Label CssClass="d-block height wrap" ID="conversionGigabyte" runat="server"></asp:Label>
                     </div>
 
                     <%-- Terrabyte conversion --%>
-                    <div class="col-sm-3 text-center btn" id="Terrabyte" >
+                    <div class="col-sm-3 text-center btn convertBtn" id="Terrabyte" >
                         <asp:Label CssClass="d-block font-weight-bold type-label" ID="typeTerrabyte" runat="server"
                             Text="Terrabyte"></asp:Label>
                         <asp:Label CssClass="d-block height wrap" ID="conversionTerrabyte" runat="server"></asp:Label>
@@ -202,28 +197,28 @@
                 <div class="row">
 
                     <%-- Petabyte conversion --%>
-                    <div class="col-sm-3 text-center btn" id="Petabyte" >
+                    <div class="col-sm-3 text-center btn convertBtn" id="Petabyte" >
                         <asp:Label CssClass="d-block font-weight-bold type-label" ID="typePetabyte" runat="server" Text="Petabyte">
                         </asp:Label>
                         <asp:Label CssClass="d-block height wrap" ID="conversionPetabyte" runat="server"></asp:Label>
                     </div>
 
                     <%-- Exabyte conversion --%>
-                    <div class="col-sm-3 text-center btn" id="Exabyte" >
+                    <div class="col-sm-3 text-center btn convertBtn" id="Exabyte" >
                         <asp:Label CssClass="d-block font-weight-bold type-label" ID="typeExabyte" runat="server" Text="Exabyte">
                         </asp:Label>
                         <asp:Label CssClass="d-block height wrap" ID="conversionExabyte" runat="server"></asp:Label>
                     </div>
 
                     <%-- Zettabyte conversion --%>
-                    <div class="col-sm-3 text-center btn" id="Zettabyte" >
+                    <div class="col-sm-3 text-center btn convertBtn" id="Zettabyte" >
                         <asp:Label CssClass="d-block font-weight-bold type-label" ID="typeZettabyte" runat="server"
                             Text="Zettabyte"></asp:Label>
                         <asp:Label CssClass="d-block height wrap" ID="conversionZettabyte" runat="server"></asp:Label>
                     </div>
 
                     <%-- Yottabyte conversion --%>
-                    <div class="col-sm-3 text-center btn" id="Yottabyte" >
+                    <div class="col-sm-3 text-center btn convertBtn" id="Yottabyte" >
                         <asp:Label CssClass="d-block font-weight-bold type-label" ID="typeYottabyte" runat="server"
                             Text="Yottabyte"></asp:Label>
                         <asp:Label CssClass="d-block height wrap" ID="conversionYottabyte" runat="server"></asp:Label>
@@ -233,7 +228,5 @@
         </div>
 
         <script src="converter.js"></script>
-        <%--<script src="../Content/Scripts/converter_conversions.js"></script>--%>
     </form>
 </body>
-</html>
